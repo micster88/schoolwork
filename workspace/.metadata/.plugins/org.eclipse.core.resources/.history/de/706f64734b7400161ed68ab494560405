@@ -1,0 +1,187 @@
+package chartBuilder;
+
+import csci348.drawings.Drawing;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class ChartBuilder {
+	private Drawing draw=new Drawing();
+	private ArrayList<Square> squareList=new ArrayList<Square>();
+	private ArrayList<Line> lineList=new ArrayList<Line>();
+	private static int MIN=0;
+	private static int MAX=600;
+	
+	private class Square {
+		private int x1;
+		private int y1;
+		private int x2;
+		private int y2;
+		private Square(int x, int y, int width, int height){
+			this.x1=x-(width/2);
+			this.y1=y-(height/2);
+			this.x2=x+(width/2);
+			this.y2=y+(height/2);
+			if(x1>=MIN || x2<=MAX || y1>=MIN || y2<=MAX){
+				drawSquare();
+			}
+		}
+		private void drawSquare(){
+			for(int i=x1; i<x2; i++){
+				for(int j=y1; j<y2; j++){
+					draw.showPoint(i, j);
+				}
+			}
+		}
+		private void eraseSquare(){
+			for(int i=x1; i<x2; i++){
+				for(int j=y1; j<y2; j++){
+					draw.hidePoint(i, j);
+				}
+			}
+		}
+	}
+	
+	private class Line {
+		private int x1;
+		private int y1;
+		private int x2;
+		private int y2;
+		private Line(int x1, int y1, int x2, int y2){
+			this.x1=x1;
+			this.y1=y1;
+			this.x2=x2;
+			this.y2=y2;
+			if((MIN<=x1 && x1<=MAX)&&(MIN<=x2 && x2<=MAX)&&(MIN<=y1 && y1<=MAX)&&(MIN<=y2 && y2<=MAX)){
+				drawLine();	
+			}
+			
+		}
+		private void drawLine(){
+			int ytemp=y1;
+			int xtemp=x1;
+			int mid=(y2-y1)/2;
+			int ytemp2=y1+mid;
+			
+			while(ytemp!=ytemp2){
+				draw.showPoint(xtemp, ytemp);
+				if(ytemp!=y2){
+					if(x2<x1){
+						ytemp--;
+					}
+					else{
+						ytemp++;
+					}
+				}
+			}
+			while(xtemp!=x2){
+				draw.showPoint(xtemp, ytemp);
+				if(xtemp!=x2){
+					if(x2<x1){
+						xtemp--;
+					}
+					else{
+						xtemp++;
+					}
+				}
+			}
+			while(ytemp!=y2){
+				draw.showPoint(xtemp, ytemp);
+				if(ytemp!=y2){
+					if(x2<x1){
+						ytemp--;
+					}
+					else{
+						ytemp++;
+					}
+				}
+			}
+		}
+		private void eraseLine(){
+			int ytemp=y1;
+			int xtemp=x1;
+			while(ytemp!=(y2/2)){
+				draw.hidePoint(xtemp, ytemp);
+				if(ytemp!=y2){
+					if(x2<x1){
+						ytemp--;
+					}
+					else{
+						ytemp++;
+					}
+				}
+			}
+			while(xtemp!=x2){
+				draw.hidePoint(xtemp, ytemp);
+				if(xtemp!=x2){
+					if(x2<x1){
+						xtemp--;
+					}
+					else{
+						xtemp++;
+					}
+				}
+			}
+			while(ytemp!=y2){
+				draw.showPoint(xtemp, ytemp);
+				if(ytemp!=y2){
+					if(x2<x1){
+						ytemp--;
+					}
+					else{
+						ytemp++;
+					}
+				}
+			}
+		}
+	}
+	
+	public void drawLine(int x1, int y1, int x2, int y2){
+		Line l=new Line(x1,y1,x2,y2);
+		lineList.add(l);
+	}
+	
+	public void drawSquare(int x, int y, int width, int height){
+		Square s=new Square(x,y, width, height);
+		squareList.add(s);
+	}
+	
+	public void reset(){
+		draw.hideAllPoints();
+		squareList=new ArrayList<Square>();
+		lineList=new ArrayList<Line>();
+	}
+	
+	public void eraseSquare(int ind){
+		squareList.get(ind).eraseSquare();
+		squareList.remove(ind);
+	}
+	
+	public void eraseLine(int ind){
+			lineList.get(ind).eraseLine();
+			lineList.remove(ind);
+	}
+	
+	public void eraseLastLine(){
+			lineList.get(lineList.size()-1).eraseLine();
+			lineList.remove(lineList.size()-1);
+		
+	}
+	
+	public void eraseLastSquare(){
+		if(!lineList.isEmpty()){
+			squareList.get(squareList.size()-1).eraseSquare();
+			squareList.remove(squareList.size()-1);
+		}
+	}
+	
+	public static void main(String[] args) {
+		ChartBuilder cb=new ChartBuilder();
+		Scanner sc=new Scanner(System.in);
+		cb.drawSquare(300, 230, 100, 50);
+		
+		cb.drawSquare(500, 400, 100, 50);
+
+		cb.drawLine(300, 255, 550, 375);
+	}
+
+}
