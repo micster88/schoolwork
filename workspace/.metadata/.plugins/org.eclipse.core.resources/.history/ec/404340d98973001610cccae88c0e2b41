@@ -1,0 +1,65 @@
+package chartBuilder;
+
+import csci348.drawings.Drawing;
+
+public class ChartBuilder {
+	private Drawing draw=new Drawing();
+	
+	private class Square {
+		private int x1;
+		private int y1;
+		private int x2;
+		private int y2;
+		private Square(int x1, int y1, int x2, int y2){
+			this.x1=x1;
+			this.y1=y1;
+			this.x2=x2;
+			this.y2=y2;
+			drawSquare();
+		}
+		private void drawSquare(){
+			
+		}
+		private void eraseSquare(){
+			
+		}
+	}
+	
+	private class Line {
+		private int x1;
+		private int y1;
+		private int x2;
+		private int y2;
+		private Line(int x1, int y1, int x2, int y2){
+			this.x1=x1;
+			this.y1=y1;
+			this.x2=x2;
+			this.y2=y2;
+			drawLine();
+		}
+		private void drawLine(){
+			for(int i=x1; i<x2; i++){
+				for(int j=y1; j<y2; j++){
+					draw.showPoint(i, j);
+				}
+			}
+		}
+		private void eraseLine(){
+			for(int i=x1; i<x2; i++){
+				for(int j=y1; j<y2; j++){
+					draw.hidePoint(i, j);
+				}
+			}
+		}
+	}
+	
+	public void drawLine(int x1, int y1, int x2, int y2){
+		Line l=new Line(x1,y1,x2,y2);
+	}
+	
+	public static void main(String[] args) {
+		ChartBuilder cb=new ChartBuilder();
+		cb.drawLine(0, 0, 100, 100);
+	}
+
+}
