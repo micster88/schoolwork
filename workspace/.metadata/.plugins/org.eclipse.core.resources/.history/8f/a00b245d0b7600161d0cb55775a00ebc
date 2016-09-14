@@ -10,6 +10,8 @@ public class ChartBuilder {
 	private Drawing draw=new Drawing();
 	private ArrayList<Square> squareList=new ArrayList<Square>();
 	private ArrayList<Line> lineList=new ArrayList<Line>();
+	private static int MIN=0;
+	private static int MAX=600;
 	
 	//Square Sub-Class that makes the Squares for the Charts
 	private class Square {

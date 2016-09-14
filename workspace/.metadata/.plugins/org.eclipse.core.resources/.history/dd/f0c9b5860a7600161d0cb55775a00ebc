@@ -10,6 +10,8 @@ public class ChartBuilder {
 	private Drawing draw=new Drawing();
 	private ArrayList<Square> squareList=new ArrayList<Square>();
 	private ArrayList<Line> lineList=new ArrayList<Line>();
+	private static int MIN=0;
+	private static int MAX=600;
 	
 	//Square Sub-Class that makes the Squares for the Charts
 	private class Square {
@@ -25,60 +27,25 @@ public class ChartBuilder {
 			this.y1=y-(height/2);
 			this.x2=x+(width/2);
 			this.y2=y+(height/2);
-			drawSquare();
+			//Makes Sure that it is in the Window before drawing
+			if(x1>=MIN || x2<=MAX || y1>=MIN || y2<=MAX){
+				drawSquare();
+			}
 		}
 		//The Draw Method
 		private void drawSquare(){
-			int tempx1=x1;
-			int tempx2=x2;
-			int tempy1=y1;
-			int tempy2=y2;
-			//Draws Top
-			while(tempx1!=tempx2){
-				draw.showPoint(tempx1, y1);
-				tempx1++;
-			}
-			//Draws Right
-			while(tempy1!=tempy2){
-				draw.showPoint(x2, tempy1);
-				tempy1++;
-			}
-			//Draws Bottom
-			while(tempx2!=x1){
-				draw.showPoint(tempx2, y2);
-				tempx2--;
-			}
-			//Draws Right
-			while(tempy2!=y1){
-				draw.showPoint(x1, tempy2);
-				tempy2--;
+			for(int i=x1; i<x2; i++){
+				for(int j=y1; j<y2; j++){
+					draw.showPoint(i, j);
+				}
 			}
 		}
 		//Erase Method
 		private void eraseSquare(){
-			int tempx1=x1;
-			int tempx2=x2;
-			int tempy1=y1;
-			int tempy2=y2;
-			//Draws Top
-			while(tempx1!=tempx2){
-				draw.hidePoint(tempx1, y1);
-				tempx1++;
-			}
-			//Draws Right
-			while(tempy1!=tempy2){
-				draw.hidePoint(x2, tempy1);
-				tempy1++;
-			}
-			//Draws Bottom
-			while(tempx2!=x1){
-				draw.hidePoint(tempx2, y2);
-				tempx2--;
-			}
-			//Draws Right
-			while(tempy2!=y1){
-				draw.hidePoint(x1, tempy2);
-				tempy2--;
+			for(int i=x1; i<x2; i++){
+				for(int j=y1; j<y2; j++){
+					draw.hidePoint(i, j);
+				}
 			}
 		}
 	}
@@ -96,7 +63,10 @@ public class ChartBuilder {
 			this.y1=y1;
 			this.x2=x2;
 			this.y2=y2;
-			drawLine();	
+			//Checks that all points are on the board before drawing
+			if((MIN<=x1 && x1<=MAX)&&(MIN<=x2 && x2<=MAX)&&(MIN<=y1 && y1<=MAX)&&(MIN<=y2 && y2<=MAX)){
+				drawLine();	
+			}
 			
 		}
 		//Draws the Line by first doing half the Y line, then the full X line,
@@ -251,6 +221,12 @@ public class ChartBuilder {
 		cb.drawLine(100,125,299,205);
 		cb.drawSquare(500, 230, 100, 100);
 		cb.drawLine(350, 230, 450, 230);
+		
+		System.out.println("Testing Placing A line out of Bounds(Image Should not change)"
+				+ ", Hit Enter");
+		sc.nextLine();
+		cb.drawLine(700,700,600,600);
+		cb.drawSquare(-110, 20, 10, 41);
 		
 		System.out.println("Testing of Erase Last Square and Line, Hit Enter");
 		sc.nextLine();
