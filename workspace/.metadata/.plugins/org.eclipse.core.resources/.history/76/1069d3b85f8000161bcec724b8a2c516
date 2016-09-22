@@ -1,0 +1,19 @@
+package hw3;
+
+public class SimpleString {
+	protected char[] charArray;
+	
+	public SimpleString(char[] input) {
+		charArray=new char[input.length];
+		System.arraycopy(input, 0, charArray, 0, input.length);
+	}
+
+	public char charAt(int index) {
+		return charArray[index];
+	}
+
+	public boolean contains(char c) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+}

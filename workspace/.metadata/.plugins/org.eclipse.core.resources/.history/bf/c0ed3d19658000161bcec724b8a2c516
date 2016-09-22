@@ -1,0 +1,49 @@
+package hw3;
+
+public class SimpleString {
+	protected char[] charArray;
+	
+	public SimpleString(char[] input) {
+		charArray=new char[input.length];
+		System.arraycopy(input, 0, charArray, 0, input.length);
+		System.out.println("A"+charArray[0]+"A");
+	}
+
+	public char charAt(int index) {
+		return charArray[index];
+	}
+
+	public boolean contains(char c) {
+		for(int i=0; i<charArray.length; i++){
+			if(charArray[i]==c){
+				return true;
+			}
+		}
+		return false;
+	}
+
+	public int indexOf(char c) {
+		for(int i=0; i<charArray.length; i++){
+			if(charArray[i]==c){
+				return i;
+			}
+		}
+		return -1;
+	}
+
+	public boolean isEmpty() {
+		if(charArray[0]!=null){
+			
+		}
+	}
+
+	public int length() {
+		int temp=0;
+		for(int i=0; i<charArray.length; i++){
+			if(charArray[i]!=' '){
+				temp++;
+			}
+		}
+		return temp;
+	}
+}

@@ -1,0 +1,13 @@
+package hw3;
+
+public class SimpleString {
+	protected char[] charArray;
+	
+	public SimpleString(char[] charArray) {
+		this.charArray=charArray;
+	}
+
+	public char charAt(int i) {
+		return charArray[i];
+	}
+}

@@ -1,0 +1,24 @@
+package hw3;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class SimpleStringTest {
+	
+	private SimpleString simp;
+	
+	private char[] charArray = 
+		{'a','b','c','d','e','f','g','a','b','c'};
+	
+	@Test
+	public void NewSimpleStringtest(){	
+		simp=new SimpleString(charArray);
+	}
+	
+	@Test
+	public void arrayCopytest(){
+		assertEquals(simp.charArray, charArray);
+	}
+
+}

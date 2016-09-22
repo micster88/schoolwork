@@ -1,0 +1,16 @@
+package hw3;
+
+public class SimpleString {
+	protected char[] charArray;
+	
+	public SimpleString(char[] input) {
+		charArray=new char[input.length];
+		System.arraycopy(input, 0, charArray, 0, input.length);
+		
+	}
+
+	public char charAt(int i) {
+		System.out.println(charArray[0]);
+		return charArray[0];
+	}
+}

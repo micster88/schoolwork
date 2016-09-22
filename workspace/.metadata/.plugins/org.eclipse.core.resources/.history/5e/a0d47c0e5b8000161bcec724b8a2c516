@@ -1,0 +1,16 @@
+package hw3;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class SimpleStringTest {
+	
+	private SimpleString simp;
+
+	@Test
+	public void newSimpleStringtest() {
+		simp=new SimpleString();
+	}
+
+}

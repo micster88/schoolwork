@@ -1,0 +1,26 @@
+package hw3;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class SimpleStringTest {
+	
+	private SimpleString simp;
+	
+	private char[] charArray = 
+		{'a','b','c','d','e','f','g','a','b','c'};
+	
+	@Before
+	public void NewSimpleStringtest(){	
+		simp=new SimpleString(charArray);
+	}
+	
+	@Test
+	public void charAttest(){
+		char c=simp.charAt(0);
+		assertEquals(c,'a');
+	}
+
+}

@@ -1,0 +1,8 @@
+package hw3;
+
+public class SimpleString {
+
+	public SimpleString(char[] charArray) {
+		// TODO Auto-generated constructor stub
+	}
+}
