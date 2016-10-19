@@ -1,0 +1,16 @@
+package chartBuilder;
+
+import csci348.drawings.SimpleDrawing;
+
+class Diamond extends Shape{
+	int x1;
+	int y1;
+	int x2;
+	int y2;
+	
+	protected Diamond(int x, int y, int width, int height, SimpleDrawing draw){
+		this.x=x;
+		this.y=y;
+		this.
+	}
+}

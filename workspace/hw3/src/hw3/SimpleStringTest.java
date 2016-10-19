@@ -60,20 +60,32 @@ public class SimpleStringTest {
 				'f','g','a','b','c','a','b','c','d','e','f',
 				'g','a','b','c'};
 		simp3=simp.concat(simp2);
+		for(int i=0; i<test.length; i++){
+			assertEquals(test[i], simp3.charAt(i));
+		}
 	}
 	
 	@Test
 	public void testSubstring(){
-	
+		char[] test={'b','c','d','e'};
+		simp3=simp.substring(1,5);
+		for(int i=0; i<simp3.length(); i++){
+			assertEquals(test[i], simp3.charAt(i));
+		}
 	}
 	
 	@Test
 	public void testEquals(){
-	
+		boolean t=simp.equals(simp2);
+		assertEquals(true, t);
+		t=simp.equals(simp3);
+		assertEquals(false, t);
 	}
 	
 	@Test
 	public void testHashCode(){
-	
+		assertEquals(simp.hashCode(),simp2.hashCode());
+		simp3=simp.concat(simp2);
+		assertNotEquals(simp3.hashCode(),simp.hashCode());
 	}
 }

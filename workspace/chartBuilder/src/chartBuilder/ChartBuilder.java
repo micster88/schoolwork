@@ -1,270 +1,251 @@
 package chartBuilder;
 
-import csci348.drawings.Drawing;
+import csci348.drawings.SimpleDrawing;
+import java.awt.Color;
+import java.awt.Point;
+import java.awt.event.ComponentEvent;
+import java.awt.event.MouseEvent;
 import java.util.ArrayList;
-import java.util.Scanner;
+/**
+ * 
+ * @author Michael Kuczkuda
+ * 
+ * Creates charts using different shapes(Circle, Diamond, Line, Parallelogram, Square, and Triangle).  
+ * Can change size and color.
+ */
+public class ChartBuilder extends SimpleDrawing{
+	private ArrayList<Shape> list=new ArrayList<Shape>();
+	private int count=0;
+	
+	/**
+	 * Creates a new Chart at size width by height
+	 * 
+	 * @param width the width of the screen size
+	 * @param height the height of the screen size
+	 */
+	public ChartBuilder(int width, int height){
+		super(width,height);
+	}
+	
+	/**
+	 * Creates a new Chart at size width by height with the shapes being foreground colored and the background is background
+	 * 
+	 * 
+	 * @param width the width of the screen size
+	 * @param height the height of the screen size
+	 * @param foreground the foreground color or color of the shapes
+	 * @param background the background color
+	 */
+	
+	public ChartBuilder(int width, int height, Color foreground, Color background){
+		super(width,height);
+		this.setBackgroundColor(background);
+		this.setForegroundColor(foreground);
+	}
+	
+	/**
+	 *Creates a new Chart at size 600 by 600
+	 */
+	public ChartBuilder(){
+		//Standard 600 by 600 and Black and White
+	}
+	
+	/**
+	 * Creates a new Chart at size 600 by 600 with the shapes being foreground colored and the background is background
+	 * 
+	 * @param foreground the foreground color or color of the shapes
+	 * @param background the background color
+	 */
+	public ChartBuilder(Color foreground, Color background){
+		this.setBackgroundColor(background);
+		this.setForegroundColor(foreground);
+	}
 
-//Class that Builds Charts using Squares and Lines
-public class ChartBuilder {
-	//The Private Variables
-	private Drawing draw=new Drawing();
-	private ArrayList<Square> squareList=new ArrayList<Square>();
-	private ArrayList<Line> lineList=new ArrayList<Line>();
-	
-	//Square Sub-Class that makes the Squares for the Charts
-	private class Square {
-		//Private Location Varables
-		private int x1;
-		private int y1;
-		private int x2;
-		private int y2;
-		
-		//Constructor that takes the Command of the Mid-Point and, Width and Height
-		private Square(int x, int y, int width, int height){
-			this.x1=x-(width/2);
-			this.y1=y-(height/2);
-			this.x2=x+(width/2);
-			this.y2=y+(height/2);
-			drawSquare();
-		}
-		//The Draw Method
-		private void drawSquare(){
-			int tempx1=x1;
-			int tempx2=x2;
-			int tempy1=y1;
-			int tempy2=y2;
-			//Draws Top
-			while(tempx1!=tempx2){
-				draw.showPoint(tempx1, y1);
-				tempx1++;
-			}
-			//Draws Right
-			while(tempy1!=tempy2){
-				draw.showPoint(x2, tempy1);
-				tempy1++;
-			}
-			//Draws Bottom
-			while(tempx2!=x1){
-				draw.showPoint(tempx2, y2);
-				tempx2--;
-			}
-			//Draws Right
-			while(tempy2!=y1){
-				draw.showPoint(x1, tempy2);
-				tempy2--;
-			}
-		}
-		//Erase Method
-		private void eraseSquare(){
-			int tempx1=x1;
-			int tempx2=x2;
-			int tempy1=y1;
-			int tempy2=y2;
-			//Draws Top
-			while(tempx1!=tempx2){
-				draw.hidePoint(tempx1, y1);
-				tempx1++;
-			}
-			//Draws Right
-			while(tempy1!=tempy2){
-				draw.hidePoint(x2, tempy1);
-				tempy1++;
-			}
-			//Draws Bottom
-			while(tempx2!=x1){
-				draw.hidePoint(tempx2, y2);
-				tempx2--;
-			}
-			//Draws Right
-			while(tempy2!=y1){
-				draw.hidePoint(x1, tempy2);
-				tempy2--;
-			}
-		}
-	}
-	
-	//Line Subclass that makes lines for the chart
-	private class Line {
-		//Private Location Variables
-		private int x1;
-		private int y1;
-		private int x2;
-		private int y2;
-		//Constructor that takes the two points
-		private Line(int x1, int y1, int x2, int y2){
-			this.x1=x1;
-			this.y1=y1;
-			this.x2=x2;
-			this.y2=y2;
-			drawLine();	
-			
-		}
-		//Draws the Line by first doing half the Y line, then the full X line,
-		//and finally the rest of the Y line
-		private void drawLine(){
-			//Temp Variables for the points
-			int tempy2=(y1+y2)/2;//midpoint
-			int tempy1=tempy2;//smaller y
-			int tempy3=tempy2;//larger y
-			int tempx1=0;//smaller x
-			int tempx2=0;//larger x
-			
-			//Checks to find the larger of the variables
-			if(y2>y1){
-				tempy1=y1;
-				tempy3=y2;
-			}
-			else if(y2<y1){
-				tempy1=y2;
-				tempy3=y1;
-			}
-			if(x2>x1){
-				tempx1=x1;
-				tempx2=x2;
-			}
-			else if(x2<x1){
-				tempx1=x2;
-				tempx2=x1;
-			}
-			//Draws the first half of the Y line
-			while(tempy1!=tempy2){
-				draw.showPoint(x1, tempy1);
-				tempy1++;
-			}
-			//Draws the X Line
-			while(tempx1!=tempx2){
-				draw.showPoint(tempx1, tempy2);
-				tempx1++;
-			}
-			//Draws the Second half of the Y line
-			while(tempy2!=tempy3){
-				draw.showPoint(x2, tempy2);
-				tempy2++;
-			}
-		}
-		//Erase Function(Same as Draw but has hidepoints instead of showpoints)
-		private void eraseLine(){
-			int tempy2=(y1+y2)/2;//midpoint
-			int tempy1=tempy2;//smaller y
-			int tempy3=tempy2;//larger y
-			int tempx1=0;//smaller x
-			int tempx2=0;//larger x
-			
-			if(y2>y1){
-				tempy1=y1;
-				tempy3=y2;
-			}
-			else if(y2<y1){
-				tempy1=y2;
-				tempy3=y1;
-			}
-			if(x2>x1){
-				tempx1=x1;
-				tempx2=x2;
-			}
-			else if(x2<x1){
-				tempx1=x2;
-				tempx2=x1;
-			}
-			while(tempy1!=tempy2){
-				draw.hidePoint(x1, tempy1);
-				tempy1++;
-			}
-			while(tempx1!=tempx2){
-				draw.hidePoint(tempx1, tempy2);
-				tempx1++;
-			}
-			while(tempy2!=tempy3){
-				draw.hidePoint(x2, tempy2);
-				tempy2++;
-			}
-		}
-	}
-	
-	//The charts drawLine function that creates a sub-classed Line and stores that line
-	//in the line list(An ArrayList of Type Line)
+	/**
+	 * 
+	 * Creates a line at points (x1,y1) to (x2,y2)
+	 * 
+	 * @param x1 first point's X
+	 * @param y1 first point's Y
+	 * @param x2 second point's X
+	 * @param y2 second point's Y
+	 */
 	public void drawLine(int x1, int y1, int x2, int y2){
-		Line l=new Line(x1,y1,x2,y2);
-		lineList.add(l);
+		Line l=new Line(x1,y1,x2,y2, this);
+		list.add(l);
+		count++;
 	}
 	
-	//The chart drawSquare function that creates a sub-classed Square and stores that
-	//in to the square list(An ArrayList of Type Square)
+
+	/**
+	 * Creates a Square of size width by height at point (x,y)
+	 * 
+	 * @param x center X
+	 * @param y center Y
+	 * @param width width of the Square
+	 * @param height height of the Square
+	 */
 	public void drawSquare(int x, int y, int width, int height){
-		Square s=new Square(x,y, width, height);
-		squareList.add(s);
+		Square s=new Square(x,y, width, height, this);
+		list.add(s);
+		count++;
 	}
 	
-	//Reset method that Resets the Drawing and lists
+	
+	/**
+	 * Creates a Circle with a radius size and at point (x,y) 
+	 * 
+	 * @param x center X
+	 * @param y center Y
+	 * @param size the Radius
+	 */
+	public void drawCircle(int x, int y, int size){
+		Circle s=new Circle(size, x, y, this);
+		list.add(s);
+		count++;
+	}
+	
+	/**
+	 *  Creates a Diamond at point (x,y) with size width by height
+	 *  
+	 * @param x center X
+	 * @param y center Y
+	 * @param width width of the Diamond
+	 * @param height height of the Diamond
+	 */
+	public void drawDiamond(int x, int y, int width, int height){
+		Diamond s=new Diamond(x, y, width, height, this);
+		list.add(s);
+		count++;
+	}
+	
+	/**
+	 * Creates a Triangle with a point at point (x,y) facing point, with a base of width and height of height
+	 * 
+	 * @param x X point of the point
+	 * @param y Y point of the point
+	 * @param point the Direction the point faces(Takes commands "Up" "Down" "Left" or "Right")
+	 * @param width width of the base
+	 * @param height height of the triangle
+	 */
+	public void drawTriangle(int x, int y, String point, int width, int height){
+		Triangle s=new Triangle(x, y, point, height, width, this);
+		list.add(s);
+		count++;
+	}
+
+	/**
+	 * Creates a Parallelogram with point (x,y) being the top left, with size width by height
+	 * 
+	 * @param x X point of top left corner
+	 * @param y Y point of top left corner
+	 * @param width width of the parallelogram
+	 * @param height height of the parallelogram
+	 * @param shift shift of the parallelogram from a normal square
+	 * @param type whether that shift is in the Vertical or Horizontal(Takes commands 'V' or 'H')
+	 */
+	public void drawParallelogram(int x, int y, int width, int height, int shift, char type){
+		Parallelogram s=new Parallelogram(x, y, width, height, shift, type, this);
+		list.add(s);
+		count++;
+	}
+	/**
+	 * Creates an Arrow from point (x,y) to point(x1,y1) with the arrow at point(x1,y1)
+	 * 
+	 * @param x X point of the first point
+	 * @param y Y point of the first point
+	 * @param x1 X point of the second point
+	 * @param y1 Y point of the second point
+	 */
+	public void drawArrow(int x, int y, int x1, int y1){
+		Arrow s=new Arrow(x,y,x1,y1,this);
+		list.add(s);
+		count++;
+	}
+	
+	/**
+	 * Resets the Chart
+	 */
 	public void reset(){
-		draw.hideAllPoints();
-		squareList=new ArrayList<Square>();
-		lineList=new ArrayList<Line>();
+		this.hideAllPoints();
+		list=new ArrayList<Shape>();
 	}
 	
-	//Erases a Square at the given index using the Squares Erase Method, 
-	//and removes it from the list
-	public void eraseSquare(int ind){
-		squareList.get(ind).eraseSquare();
-		squareList.remove(ind);
+	/**
+	 * Erases the shape at index ind(Starts from 0 in order of creation
+	 * 
+	 * @param ind index
+	 */
+	public void erase(int ind){
+		list.get(ind).erase();
+		list.remove(ind);
+		count--;
 	}
 	
-	//Erases a Line at the given index, using the Lines Erase Method, 
-	//and removes it from the list
-	public void eraseLine(int ind){
-			lineList.get(ind).eraseLine();
-			lineList.remove(ind);
+	/**
+	 * Erases the last shape created
+	 */
+	public void eraseLast(){
+		list.get(list.size()-1).erase();
+		list.remove(list.size()-1);	
+		count--;
 	}
 	
-	//Erases the last drawn Line
-	public void eraseLastLine(){
-			lineList.get(lineList.size()-1).eraseLine();
-			lineList.remove(lineList.size()-1);
-		
+
+	/**
+	 *Looks at the point clicked and checks whether a shape is near, and deletes that shape 
+	 */
+	@Override 
+	public void mouseClicked(MouseEvent e){
+		Point p=e.getPoint();
+		int holder=-1;
+		int pX=p.x;
+		int pY=p.y;
+		for(Shape sh : list){
+			boolean test=sh.checkPoint(pX, pY);
+			if(test==true){
+				sh.erase();
+				holder=list.indexOf(sh);
+				break;
+			}
+		}
+		if(holder!=-1){
+			list.remove(holder);
+			count--;
+			redraw();
+		}
 	}
-	
-	//Erases the last draw Square
-	public void eraseLastSquare(){
-		if(!lineList.isEmpty()){
-			squareList.get(squareList.size()-1).eraseSquare();
-			squareList.remove(squareList.size()-1);
+	/**
+	 * Redraws all the shapes
+	 */
+	private void redraw(){
+		for(int i=0; i<count-1; i++){
+			list.get(i).draw();
 		}
 	}
 	
-	//Testing
-	public static void main(String[] args) {
-		ChartBuilder cb=new ChartBuilder();
-		Scanner sc=new Scanner(System.in);
-		
-		System.out.println("Testing the Drawing of Lines and Squares, Hit Enter");
-		sc.nextLine();
-		cb.drawSquare(300, 230, 100, 50);
-		cb.drawSquare(500, 400, 100, 50);
-		cb.drawLine(301, 255, 500, 375);
-		cb.drawSquare(300,400,100,50);
-		cb.drawLine(300,255,300,375);
-		cb.drawSquare(100,400,100,50);
-		cb.drawLine(299, 255, 100, 375);
-		cb.drawSquare(500, 100, 100, 50);
-		cb.drawLine(500, 125, 301, 205);
-		cb.drawSquare(100, 100, 100, 50);
-		cb.drawLine(100,125,299,205);
-		cb.drawSquare(500, 230, 100, 100);
-		cb.drawLine(350, 230, 450, 230);
-		
-		System.out.println("Testing of Erase Last Square and Line, Hit Enter");
-		sc.nextLine();
-		cb.eraseLastLine();
-		cb.eraseLastSquare();
-		
-		System.out.println("Testing Erase of an Index of Square and Line, Hit Enter");
-		sc.nextLine();
-		cb.eraseLine(3);
-		cb.eraseSquare(4);
-		
-		System.out.println("Testing Reset, Hit Enter");
-		sc.hasNextLine();
-		cb.reset();
+	
+	/**
+	 * Redraws all the shapes when the chart is resized
+	 */
+	@Override
+	public void componentResized(ComponentEvent event){
+		redraw();
 	}
-
+	
+	/**
+	 * Changes the Background color to background
+	 * @param background background color
+	 */
+	public void changeBackgroundColor(Color background){
+		this.setBackgroundColor(background);
+	}
+	
+	/**
+	 * changes the foreground or color of the shapes to foreground
+	 * @param foreground foreground color
+	 */
+	public void changeForegroundColor(Color foreground){
+		this.setForegroundColor(foreground);
+	}
 }

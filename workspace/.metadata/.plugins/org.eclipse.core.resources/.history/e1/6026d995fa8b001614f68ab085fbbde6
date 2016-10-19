@@ -1,0 +1,146 @@
+package chartBuilder;
+
+import csci348.drawings.SimpleDrawing;
+
+class Line extends Shape {
+	private int x1;
+	private int y1;
+	private int x2;
+	private int y2;
+
+	protected Line(int x1, int y1, int x2, int y2, SimpleDrawing draw) {
+		this.x1 = x1;
+		this.y1 = y1;
+		this.x2 = x2;
+		this.y2 = y2;
+		this.x=(x1+x2)/2;
+		this.y=(y1+y2)/2;
+		this.draw = draw;
+		drawTEST();
+
+	}
+
+	@Override
+	protected void draw() {
+		int tempy2 = (y1 + y2) / 2;// midpoint
+		int tempy1 = tempy2;// smaller y
+		int tempy3 = tempy2;// larger y
+		int tempx1 = 0;// smaller x
+		int tempx2 = 0;// larger x
+
+		if (y2 > y1) {
+			tempy1 = y1;
+			tempy3 = y2;
+		} else if (y2 < y1) {
+			tempy1 = y2;
+			tempy3 = y1;
+		}
+		if (x2 > x1) {
+			tempx1 = x1;
+			tempx2 = x2;
+		} else if (x2 < x1) {
+			tempx1 = x2;
+			tempx2 = x1;
+		}
+		
+		while (tempy1 != tempy2) {
+			draw.showPoint(x1, tempy1);
+			tempy1++;
+		}
+
+		while (tempx1 != tempx2) {
+			draw.showPoint(tempx1, tempy2);
+			tempx1++;
+		}
+		
+		while (tempy2 != tempy3) {
+			draw.showPoint(x2, tempy2);
+			tempy2++;
+		}
+	}
+	
+	//Bresenham's line algorithm
+	//From https://rosettacode.org/wiki/Bitmap/Bresenham%27s_line_algorithm#Java
+	//implemented for our code!
+	protected void drawTEST(){
+		int d = 0; 
+		//Difference Y
+        int dy = Math.abs(y2 - y1);
+        //Difference X
+        int dx = Math.abs(x2 - x1);
+ 
+        
+        int dy2 = (dy << 1); // slope scaling factors to avoid floating
+        int dx2 = (dx << 1); // point
+ 
+        int ix = x1 < x2 ? 1 : -1; // increment direction
+        int iy = y1 < y2 ? 1 : -1;
+        
+        int tempX=x1;
+        int tempY=y1;
+        //
+        if (dy <= dx) {
+        	//Infinite Loop
+            for (;;) {
+                draw.showPoint(tempX, tempY);
+                if (tempX == x2)
+                    break;
+                tempX += ix;
+                d += dy2;
+                if (d > dx) {
+                    tempY += iy;
+                    d -= dx2;
+                }
+            }
+        } else {
+        	//Infinite Loop
+            for (;;) {
+                draw.showPoint(tempX, tempY);
+                if (tempY == y2)
+                    break;
+                tempY += iy;
+                d += dx2;
+                if (d > dy) {
+                    tempX += ix;
+                    d -= dy2;
+                }
+            }
+        }
+	}
+
+	@Override
+	protected void erase() {
+		int tempy2 = (y1 + y2) / 2;// midpoint
+		int tempy1 = tempy2;// smaller y
+		int tempy3 = tempy2;// larger y
+		int tempx1 = 0;// smaller x
+		int tempx2 = 0;// larger x
+
+		if (y2 > y1) {
+			tempy1 = y1;
+			tempy3 = y2;
+		} else if (y2 < y1) {
+			tempy1 = y2;
+			tempy3 = y1;
+		}
+		if (x2 > x1) {
+			tempx1 = x1;
+			tempx2 = x2;
+		} else if (x2 < x1) {
+			tempx1 = x2;
+			tempx2 = x1;
+		}
+		while (tempy1 != tempy2) {
+			draw.hidePoint(x1, tempy1);
+			tempy1++;
+		}
+		while (tempx1 != tempx2) {
+			draw.hidePoint(tempx1, tempy2);
+			tempx1++;
+		}
+		while (tempy2 != tempy3) {
+			draw.hidePoint(x2, tempy2);
+			tempy2++;
+		}
+	}
+}

@@ -1,0 +1,15 @@
+package chartBuilder;
+
+import csci348.drawings.SimpleDrawing;
+Line l1;
+Line l2;
+Line l3;
+
+class Arrow extends Shape {
+	protected Arrow(int x, int y, int x1, int y1, SimpleDrawing draw) {
+		super(x, y, draw);
+		// TODO Auto-generated constructor stub
+	}
+
+	protected int size;
+}

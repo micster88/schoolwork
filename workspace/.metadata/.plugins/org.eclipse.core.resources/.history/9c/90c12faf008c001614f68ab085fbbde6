@@ -1,0 +1,5 @@
+package chartBuilder;
+
+class Parallelograms extends Shape{
+	
+}

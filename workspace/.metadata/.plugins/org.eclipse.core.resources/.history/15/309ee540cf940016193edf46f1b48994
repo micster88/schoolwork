@@ -1,0 +1,182 @@
+package chartBuilder;
+
+import csci348.drawings.SimpleDrawing;
+
+class Line extends Shape {
+	private int x1;
+	private int y1;
+	private int x2;
+	private int y2;
+
+	protected Line(int x, int y, int x2, int y2, SimpleDrawing draw) {
+		super(x, y, draw);
+		this.x1 = x;
+		this.y1 = y;
+		this.x2 = x2;
+		this.y2 = y2;
+		this.draw = draw;
+		draw();
+
+	}
+
+	//Bresenham's line algorithm
+	//From https://rosettacode.org/wiki/Bitmap/Bresenham%27s_line_algorithm#Java
+	//implemented for the projected
+	@Override
+	protected void draw(){
+		int d = 0; 
+		//Difference Y
+        int dy = Math.abs(y2 - y1);
+        //Difference X
+        int dx = Math.abs(x2 - x1);
+ 
+        
+        int dy2 = (dy << 1); // slope scaling factors to avoid floating
+        int dx2 = (dx << 1); // point
+ 
+        int ix;// increment direction
+        int iy;
+        if(x1<x2){
+        	ix=1;
+        }else{
+        	ix=-1;
+        }
+        if(y1<y2){
+        	iy=1;
+        }else{
+        	iy=-1;
+        }
+        
+        int tempX=x1;
+        int tempY=y1;
+        //
+        if (dy <= dx) {
+            while(tempX!=x2) {
+                draw.showPoint(tempX, tempY);
+                tempX += ix;
+                d += dy2;
+                if (d > dx) {
+                    tempY += iy;
+                    d -= dx2;
+                }
+            }
+        } else {
+        	while(tempY!=y2) {
+                draw.showPoint(tempX, tempY);
+                tempY += iy;
+                d += dx2;
+                if (d > dy) {
+                    tempX += ix;
+                    d -= dy2;
+                }
+            }
+        }
+	}
+
+	@Override
+	protected void erase() {
+		int d = 0; 
+		//Difference Y
+        int dy = Math.abs(y2 - y1);
+        //Difference X
+        int dx = Math.abs(x2 - x1);
+ 
+        
+        int dy2 = (dy << 1); // slope scaling factors to avoid floating
+        int dx2 = (dx << 1); // point
+ 
+        int ix;// increment direction
+        int iy;
+        if(x1<x2){
+        	ix=1;
+        }else{
+        	ix=-1;
+        }
+        if(y1<y2){
+        	iy=1;
+        }else{
+        	iy=-1;
+        }
+        
+        int tempX=x1;
+        int tempY=y1;
+        //
+        if (dy <= dx) {
+            while(tempX!=x2) {
+                draw.hidePoint(tempX, tempY);
+                tempX += ix;
+                d += dy2;
+                if (d > dx) {
+                    tempY += iy;
+                    d -= dx2;
+                }
+            }
+        } else {
+        	while(tempY!=y2) {
+                draw.hidePoint(tempX, tempY);
+                tempY += iy;
+                d += dx2;
+                if (d > dy) {
+                    tempX += ix;
+                    d -= dy2;
+                }
+            }
+        }
+	}
+	
+	@Override
+	protected boolean checkPoint(int pX, int pY){
+		int d = 0; 
+		//Difference Y
+        int dy = Math.abs(y2 - y1);
+        //Difference X
+        int dx = Math.abs(x2 - x1);
+ 
+        
+        int dy2 = (dy << 1); // slope scaling factors to avoid floating
+        int dx2 = (dx << 1); // point
+ 
+        int ix;// increment direction
+        int iy;
+        if(x1<x2){
+        	ix=1;
+        }else{
+        	ix=-1;
+        }
+        if(y1<y2){
+        	iy=1;
+        }else{
+        	iy=-1;
+        }
+        
+        int tempX=x1;
+        int tempY=y1;
+        //
+        if (dy <= dx) {
+            while(tempX!=x2) {
+                if(((pX==tempX)||((tempX-11)<pX)&&(pX<(tempX+11)))&&((pY==tempY)||((tempY-11)<pY)&&(pY<(tempY+11)))){
+                	return true;
+                }
+                tempX += ix;
+                d += dy2;
+                if (d > dx) {
+                    tempY += iy;
+                    d -= dx2;
+                }
+            }
+        } else {
+        	while(tempY!=y2) {
+        		if(((pX==tempX)||((tempX-11)<pX)&&(pX<(tempX+11)))&&((pY==tempY)||((tempY-11)<pY)&&(pY<(tempY+11)))){
+                	return true;
+                }
+                tempY += iy;
+                d += dx2;
+                if (d > dy) {
+                    tempX += ix;
+                    d -= dy2;
+                }
+            }
+        }
+        return false;
+	}
+}

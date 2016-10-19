@@ -1,0 +1,13 @@
+package chartBuilder;
+
+import java.util.Scanner;
+
+class Test {
+
+	public static void main(String[] args) {
+		ChartBuilder cb=new ChartBuilder();
+		cb.drawArrow(0, 0, 100, 100);
+		cb.drawLine(600, 600, 500, 500);
+	}
+
+}

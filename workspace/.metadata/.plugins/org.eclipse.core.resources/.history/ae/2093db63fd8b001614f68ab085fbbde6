@@ -1,0 +1,29 @@
+package chartBuilder;
+
+import csci348.drawings.SimpleDrawing;
+
+class Shape {
+	protected int x;
+	protected int y;
+	protected SimpleDrawing draw;
+	
+	protected Shape(int x, int y, SimpleDrawing draw){
+		
+	}
+	
+	protected int getX(){
+		return x;
+	}
+	
+	protected int getY(){
+		return y;
+	}
+	
+	protected void erase(){	}
+	
+	protected void draw(){ }
+	
+	protected boolean checkPoint(int pX, int pY){
+		return false;
+	}
+}

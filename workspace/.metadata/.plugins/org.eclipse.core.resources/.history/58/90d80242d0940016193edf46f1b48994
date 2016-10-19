@@ -1,0 +1,250 @@
+package chartBuilder;
+
+import csci348.drawings.SimpleDrawing;
+import java.awt.Color;
+import java.awt.Point;
+import java.awt.event.ComponentEvent;
+import java.awt.event.MouseEvent;
+import java.util.ArrayList;
+/**
+ * 
+ * @author Michael Kuczkuda
+ * 
+ * Creates charts using different shapes(Circle, Diamond, Line, Parallelogram, Square, and Triangle).  
+ * Can change size and color.
+ */
+public class ChartBuilder extends SimpleDrawing{
+	private ArrayList<Shape> list=new ArrayList<Shape>();
+	private int count=0;
+	
+	/**
+	 * Creates a new Chart at size width by height
+	 * 
+	 * @param width the width of the screen size
+	 * @param height the height of the screen size
+	 */
+	public ChartBuilder(int width, int height){
+		super(width,height);
+	}
+	
+	/**
+	 * Creates a new Chart at size width by height with the shapes being foreground colored and the background is background
+	 * 
+	 * 
+	 * @param width the width of the screen size
+	 * @param height the height of the screen size
+	 * @param foreground the foreground color or color of the shapes
+	 * @param background the background color
+	 */
+	
+	public ChartBuilder(int width, int height, Color foreground, Color background){
+		super(width,height);
+		this.setBackgroundColor(background);
+		this.setForegroundColor(foreground);
+	}
+	
+	/**
+	 *Creates a new Chart at size 600 by 600
+	 */
+	public ChartBuilder(){
+		//Standard 600 by 600 and Black and White
+	}
+	
+	/**
+	 * Creates a new Chart at size 600 by 600 with the shapes being foreground colored and the background is background
+	 * 
+	 * @param foreground the foreground color or color of the shapes
+	 * @param background the background color
+	 */
+	public ChartBuilder(Color forground, Color background){
+		this.setBackgroundColor(background);
+		this.setForegroundColor(forground);
+	}
+
+	/**
+	 * 
+	 * Creates a line at points (x1,y1) to (x2,y2)
+	 * 
+	 * @param x1 first point's X
+	 * @param y1 first point's Y
+	 * @param x2 second point's X
+	 * @param y2 second point's Y
+	 */
+	public void drawLine(int x1, int y1, int x2, int y2){
+		Line l=new Line(x1,y1,x2,y2, this);
+		list.add(l);
+		count++;
+	}
+	
+
+	/**
+	 * Creates a Square of size width by height at point (x,y)
+	 * 
+	 * @param x center X
+	 * @param y center Y
+	 * @param width width of the Square
+	 * @param height height of the Square
+	 */
+	public void drawSquare(int x, int y, int width, int height){
+		Square s=new Square(x,y, width, height, this);
+		list.add(s);
+		count++;
+	}
+	
+	
+	/**
+	 * Creates a Circle with a radius size and at point (x,y) 
+	 * 
+	 * @param x center X
+	 * @param y center Y
+	 * @param size the Radius
+	 */
+	public void drawCircle(int x, int y, int size){
+		Circle s=new Circle(size, x, y, this);
+		list.add(s);
+		count++;
+	}
+	
+	/**
+	 *  Creates a Diamond at point (x,y) with size width by height
+	 *  
+	 * @param x center X
+	 * @param y center Y
+	 * @param width width of the Diamond
+	 * @param height height of the Diamond
+	 */
+	public void drawDiamond(int x, int y, int width, int height){
+		Diamond s=new Diamond(x, y, width, height, this);
+		list.add(s);
+		count++;
+	}
+	
+	/**
+	 * Creates a Triangle with a point at point (x,y) facing point, with a base of width and height of height
+	 * 
+	 * @param x X point of the point
+	 * @param y Y point of the point
+	 * @param point the Direction the point faces(Takes commands "Up" "Down" "Left" or "Right")
+	 * @param width width of the base
+	 * @param height height of the triangle
+	 */
+	public void drawTriangle(int x, int y, String point, int width, int height){
+		Triangle s=new Triangle(x, y, point, height, width, this);
+		list.add(s);
+		count++;
+	}
+
+	/**
+	 * Creates a Parallelogram with point (x,y) being the top left, with size width by height
+	 * 
+	 * @param x X point of top left corner
+	 * @param y Y point of top left corner
+	 * @param width width of the parallelogram
+	 * @param height height of the parallelogram
+	 * @param shift shift of the parallelogram from a normal square
+	 * @param type whether that shift is in the Vertical or Horizontal(Takes commands 'V' or 'H')
+	 */
+	public void drawParallelogram(int x, int y, int width, int height, int shift, char type){
+		Parallelogram s=new Parallelogram(x, y, width, height, shift, type, this);
+		list.add(s);
+		count++;
+	}
+	/**
+	 * Creates an Arrow from point (x,y) to point(x1,y1) with the arrow at point(x1,y1)
+	 * 
+	 * @param x X point of the first point
+	 * @param y Y point of the first point
+	 * @param x1 X point of the second point
+	 * @param y1 Y point of the second point
+	 */
+	public void drawArrow(int x, int y, int x1, int y1){
+		Arrow s=new Arrow(x,y,x1,y1,this);
+		list.add(s);
+		count++;
+	}
+	
+	/**
+	 * Resets the Chart
+	 */
+	public void reset(){
+		this.hideAllPoints();
+		list=new ArrayList<Shape>();
+	}
+	
+	/**
+	 * Erases the shape at index ind(Starts from 0 in order of creation
+	 * 
+	 * @param ind index
+	 */
+	public void erase(int ind){
+		list.get(ind).erase();
+		list.remove(ind);
+		count--;
+	}
+	
+	/**
+	 * Erases the last shape created
+	 */
+	public void eraseLast(){
+		list.get(list.size()-1).erase();
+		list.remove(list.size()-1);	
+		count--;
+	}
+	
+
+	/**
+	 *Looks at the point clicked and checks whether a shape is near, and deletes that shape 
+	 */
+	@Override 
+	public void mouseClicked(MouseEvent e){
+		Point p=e.getLocationOnScreen();
+		int holder=-1;
+		int pX=p.x;
+		int pY=p.y;
+		for(Shape sh : list){
+			boolean test=sh.checkPoint(pX, pY);
+			if(test==true){
+				sh.erase();
+				holder=list.indexOf(sh);
+				break;
+			}
+		}
+		if(holder!=-1){
+			list.remove(holder);
+			redraw();
+		}
+	}
+	/**
+	 * Redraws all the shapes
+	 */
+	public void redraw(){
+		for(int i=0; i<count-1; i++){
+			list.get(i).draw();
+		}
+	}
+	
+	
+	/**
+	 * Redraws all the shapes when the chart is resized
+	 */
+	@Override
+	public void componentResized(ComponentEvent event){
+		redraw();
+	}
+	
+	/**
+	 * Changes the Background color to background
+	 * @param background background color
+	 */
+	public void changeBackgroundColor(Color background){
+		this.setBackgroundColor(background);
+	}
+	
+	/**
+	 * changes the foreground or color of the shapes to foreground
+	 * @param foreground
+	 */
+	public void changeForgroundColor(Color foreground){
+		this.setForegroundColor(foreground);
+	}
+}

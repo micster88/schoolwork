@@ -1,0 +1,23 @@
+package chartBuilder;
+
+import csci348.drawings.SimpleDrawing;
+
+class Shape {
+	protected int x;
+	protected int y;
+	protected SimpleDrawing draw;
+	
+	protected Shape(int x, int y, SimpleDrawing draw){
+		this.x=x;
+		this.y=y;
+		this.draw=draw;
+	}
+	
+	protected void erase(){	}
+	
+	protected void draw(){ }
+	
+	protected boolean checkPoint(int pX, int pY){
+		return false;
+	}
+}

@@ -1,0 +1,16 @@
+package chartBuilder;
+
+import java.util.Scanner;
+
+class Test {
+
+	public static void main(String[] args) {
+		ChartBuilder cb=new ChartBuilder();
+		Scanner sc=new Scanner(System.in);
+		cb.drawLine(600, 0, 0, 600);
+		cb.drawCircle(70, 600, 300);
+		cb.drawSquare(300, 300, 140, 140);
+		cb.drawDiamond(500, 400, 100, 200);
+	}
+
+}

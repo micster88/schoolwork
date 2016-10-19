@@ -1,0 +1,26 @@
+package chartBuilder;
+
+import java.util.Scanner;
+
+class Test {
+
+	public static void main(String[] args) {
+		ChartBuilder cb=new ChartBuilder();
+		Scanner sc=new Scanner(System.in);
+		//cb.drawLine(600, 0, 0, 600);
+		//cb.drawCircle(600, 300, 70);
+		//cb.drawSquare(300, 300, 140, 140);
+		//cb.drawDiamond(500, 400, 150, 200);
+		//cb.drawDiamond(400, 500, 200, 100);
+		cb.drawParallelogram(10, 10, 100, 100, 50, 'h');
+		cb.drawParallelogram(10, 110, 100, 100, 50, 'h');
+		cb.drawParallelogram(10, 210, 100, 100, 50, 'h');
+		cb.drawParallelogram(10, 310, 100, 100, 50, 'h');
+		cb.drawParallelogram(10, 410, 100, 100, 50, 'h');
+		cb.drawParallelogram(10, 510, 100, 100, 50, 'h');
+		//cb.drawParallelogram(150, 10, 100, 100, -50, 'h');
+		//cb.drawParallelogram(250, 100, 100, 100, -50, 'v');
+		//cb.drawParallelogram(500, 100, 100, 100, 50, 'v');
+	}
+
+}

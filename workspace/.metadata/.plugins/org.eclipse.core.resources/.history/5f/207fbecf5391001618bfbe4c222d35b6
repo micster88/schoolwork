@@ -1,0 +1,112 @@
+package chartBuilder;
+
+import csci348.drawings.SimpleDrawing;
+import java.awt.Color;
+import java.awt.Point;
+import java.awt.event.ComponentEvent;
+import java.awt.event.MouseEvent;
+import java.util.ArrayList;
+
+public class ChartBuilder extends SimpleDrawing{
+	private ArrayList<Shape> list=new ArrayList<Shape>();
+	
+	public ChartBuilder(int width, int height){
+		super(width,height);
+	}
+	
+	public ChartBuilder(int width, int height, Color forground, Color background){
+		super(width,height);
+		this.setBackgroundColor(background);
+		this.setForegroundColor(forground);
+	}
+	
+	public ChartBuilder(){
+		//Standard 600 by 600 and Black and White
+	}
+	
+	public ChartBuilder(Color forground, Color background){
+		this.setBackgroundColor(background);
+		this.setForegroundColor(forground);
+	}
+
+	public void drawLine(int x1, int y1, int x2, int y2){
+		Line l=new Line(x1,y1,x2,y2, this);
+		list.add(l);
+	}
+	
+
+	public void drawSquare(int x, int y, int width, int height){
+		Square s=new Square(x,y, width, height, this);
+		list.add(s);
+	}
+	
+	public void drawCircle(int x, int y, int size){
+		Circle s=new Circle(size, x, y, this);
+		list.add(s);
+	}
+	
+	public void drawDiamond(int x, int y, int width, int height){
+		Diamond s=new Diamond(x, y, width, height, this);
+		list.add(s);
+	}
+	public void drawTriangle(int x, int y, String point, int width, int height){
+		Triangle s=new Triangle(x, y, point, height, width, this);
+		list.add(s);
+	}
+	
+	public void drawParallelogram(int x, int y, int width, int height, int shift, char type){
+		Parallelogram s=new Parallelogram(x, y, width, height, shift, type, this);
+		list.add(s);
+	}
+	
+	public void reset(){
+		this.hideAllPoints();
+		list=new ArrayList<Shape>();
+	}
+	
+	public void erase(int ind){
+		list.get(ind).erase();
+		list.remove(ind);
+	}
+	
+	public void eraseLast(){
+		list.get(list.size()-1).erase();
+		list.remove(list.size()-1);	
+	}
+	
+	@Override
+	public void mouseClicked(MouseEvent e){
+		Point p=e.getLocationOnScreen();
+		int holder=-1;
+		int pX=p.x;
+		int pY=p.y;
+		for(Shape sh : list){
+			boolean test=sh.checkPoint(pX, pY);
+			if(test==true){
+				sh.erase();
+				holder=list.indexOf(sh);
+				break;
+			}
+		}
+		if(holder!=-1){
+			list.remove(holder);
+			redraw();
+		}
+	}
+	
+	public void redraw(){
+		
+	}
+	
+	public void componentResized(ComponentEvent event){
+		if(!list.equals(null))redraw();
+	}
+	
+	public void changeBackgroundColor(Color background){
+		this.setBackgroundColor(background);
+	}
+	
+	public void changeForgroundColor(Color forground){
+		this.setForegroundColor(forground);
+	}
+}

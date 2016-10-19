@@ -1,0 +1,5 @@
+package chartBuilder;
+
+class Arrow extends Shape {
+	protected int size;
+}

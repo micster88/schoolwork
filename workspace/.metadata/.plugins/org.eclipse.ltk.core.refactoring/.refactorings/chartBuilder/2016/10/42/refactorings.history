@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;chartBuilder.Parallelograms.java&apos; to &apos;Parallelogram.java&apos;&#x0A;- Original project: &apos;chartBuilder&apos;&#x0A;- Original element: &apos;chartBuilder.Parallelograms.java&apos;&#x0A;- Renamed element: &apos;chartBuilder.Parallelogram.java&apos;" description="Rename compilation unit &apos;Parallelograms.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;chartBuilder{Parallelograms.java" name="Parallelogram.java" references="false" stamp="1476304189245" version="1.0"/>
+</session>

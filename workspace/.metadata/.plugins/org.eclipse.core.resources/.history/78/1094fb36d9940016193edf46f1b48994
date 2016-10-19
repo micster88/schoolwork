@@ -1,0 +1,18 @@
+package chartBuilder;
+
+import java.util.Scanner;
+//The Test of the functions and features of the Chartbuilding program
+class Test {
+
+	public static void main(String[] args) {
+		ChartBuilder cb=new ChartBuilder();
+		cb.drawArrow(0, 0, 100, 100);
+		cb.drawCircle(150, 50, 50);
+		cb.drawDiamond(250, 50, 100, 100);
+		cb.drawLine(300, 0, 400, 100);
+		cb.drawParallelogram(0, 100, 80, 100, 20, 'H');
+		cb.drawSquare(150, 150, 100, 100);
+		cb.drawTriangle(250, 100, "UP", 100, 100);
+	}
+
+}

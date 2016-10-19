@@ -1,0 +1,45 @@
+package chartBuilder;
+import java.awt.Color;
+import java.util.Scanner;
+//The Test of the functions and features of the Chartbuilding program
+class Test {
+
+	public static void main(String[] args) {
+		System.out.println("Test of General Constructor and All Shapes, Click to Delete");
+		ChartBuilder cb=new ChartBuilder();
+		cb.drawArrow(0, 0, 80, 80);
+		cb.drawCircle(150, 50, 45);
+		cb.drawDiamond(250, 50, 100, 100);
+		cb.drawLine(300, 0, 400, 100);
+		cb.drawParallelogram(0, 100, 80, 100, 20, 'H');
+		cb.drawParallelogram(20, 200, 80, 100, -20, 'H');
+		cb.drawParallelogram(10, 300, 100, 80, 20, 'V');
+		cb.drawParallelogram(10, 420, 100, 80, -20, 'V');
+		cb.drawSquare(150, 150, 100, 100);
+		cb.drawTriangle(250, 100, "UP", 100, 100);
+		cb.drawTriangle(250, 300, "DOWN", 100, 100);
+		cb.drawTriangle(300, 350, "Right", 100, 100);
+		cb.drawTriangle(200, 450, "left", 100, 100);
+		System.out.println("Enter to Continue");
+		
+		Scanner sc=new Scanner(System.in);
+		sc.nextLine();
+		System.out.println("Testing other Constructors");
+		ChartBuilder size=new ChartBuilder(800,800);
+		ChartBuilder color=new ChartBuilder(Color.CYAN, Color.red);
+		ChartBuilder sizeAndcolor=new ChartBuilder(800,800,Color.CYAN, Color.red);
+		size.drawArrow(0, 0, 750, 750);
+		color.drawArrow(0, 0, 550, 500);
+		sizeAndcolor.drawArrow(0, 0, 750, 750);
+		System.out.println("Enter to Continue");
+		
+		sc.nextLine();
+		cb=new ChartBuilder();
+		System.out.println("Testing other Resizing, Scale the Window to See Shape!");
+		cb.drawSquare(700, 500, 100, 100);
+		cb.changeBackgroundColor(Color.CYAN);
+		cb.changeForgroundColor(Color.RED);
+		cb.drawCircle(600, 300, 100);
+	}
+
+}
