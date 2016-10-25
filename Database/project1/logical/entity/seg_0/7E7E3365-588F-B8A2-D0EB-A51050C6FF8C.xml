@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7E7E3365-588F-B8A2-D0EB-A51050C6FF8C" name="PLAY">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-21 17:17:56 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="PLAY_ID" id="8C7F1DBF-E8F8-8612-4360-2DAD68B6CBE1">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-21 17:26:29 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<domain>DOM2025170</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NAME" id="674D4A92-B511-3FD4-E25E-E9BE2CDADBD8">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-21 17:26:41 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>DOM3000005</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ACTS" id="23B7DC52-E80F-3CB0-58E1-D4E073E9DA5B">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-21 17:26:47 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DOM10006</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AUTHOR_FIRST_NAME" id="4BAC1CFB-6716-4426-932F-2D3D16CB22D5">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-21 17:27:46 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>DOM3000005</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AUTHOR_LAST_NAME" id="A56782C7-0E0D-17D9-D4C2-E5962DEA81C8">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-21 17:28:06 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>DOM3000005</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TYPE" id="8A65BD2A-8278-AA99-6572-5A2F5AED1C08">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-21 17:28:23 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>DOM3000005</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PRODUCTION_ID" id="0E20836A-5D86-EFCD-F512-0457C09EC2F9">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-22 20:34:24 UTC</createdTime>
+<generatorID>53620F40-BA69-0228-B337-3E52F398FD47</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<referedAttribute>C05AF660-13C0-A24A-309D-3B989BD50C1A</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<domain>DOM2025170</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="862A660D-179E-60FA-07D1-D9724076CF72" name="PLAY PK">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-21 17:28:45 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8C7F1DBF-E8F8-8612-4360-2DAD68B6CBE1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6606E862-567B-1BEE-5CFD-5BAC04BB2BE6" name="DUES">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-21 17:20:14 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="PAID_FULL" id="730E41F7-FEA2-8B4C-2063-B31C3A61D67F">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-21 17:36:22 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PAID_AMOUNT" id="521F1574-729D-FF75-D324-68CE3C0C407B">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-21 17:37:00 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<domain>DOM2025070</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="YEAR" id="E2097C87-33C0-F62E-3F8A-EC544CD07DBA">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-21 17:37:16 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>DOM3000005</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MEMBER_ID" id="7AA5EFE9-6430-F661-5F82-172A2E71EF35">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-22 20:16:44 UTC</createdTime>
+<generatorID>3E060CF5-EE58-16CB-6302-7783916088EC</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<referedAttribute>6A164243-A5D6-B7CB-5DAB-6969206E3828</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<domain>DOM2025170</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

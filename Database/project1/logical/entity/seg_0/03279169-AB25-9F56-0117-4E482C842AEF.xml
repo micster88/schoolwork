@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="03279169-AB25-9F56-0117-4E482C842AEF" name="COUNCILMAN">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-21 17:19:54 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="POSTITION" id="A19D337B-F341-29C9-1EB9-A1E732822C7E">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-21 17:35:15 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>DOM3000005</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="YEAR" id="CB6311E4-423A-DC2D-0FE4-91092A1C68CD">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-21 17:35:25 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>DOM3000005</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MEMBER_ID" id="DE30CA72-4034-7E85-DB60-99EA41C17AAF">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-22 21:26:16 UTC</createdTime>
+<generatorID>0E30CD2D-388E-ABD2-CC5B-B4E8E19BCA17</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<referedAttribute>6A164243-A5D6-B7CB-5DAB-6969206E3828</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<domain>DOM2025170</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

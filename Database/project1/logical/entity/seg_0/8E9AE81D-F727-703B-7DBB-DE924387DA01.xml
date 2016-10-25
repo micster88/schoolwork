@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8E9AE81D-F727-703B-7DBB-DE924387DA01" name="BUYER">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-22 20:51:29 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="BUYER_ID" id="1FAEF83E-B3B1-816F-7981-911D563D8317">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-22 20:51:29 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<domain>DOM2025170</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FIRST_NAME" id="BD808EAA-3F55-58E4-3E9A-90378D913E2C">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-22 20:51:29 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>DOM3000005</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LAST_NAME" id="EF6A05C4-2A9A-6690-FC2C-DF6FF1692061">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-22 20:51:29 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>DOM3000005</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="STREET" id="1A18E715-743A-C724-476A-C51BC016F63D">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-22 20:51:29 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>DOM3000005</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CITY" id="06AB7D4D-089C-BE42-37C7-B45A09CF3565">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-22 20:51:29 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>DOM3000005</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="STATE" id="47EEDFE5-8B78-E4BB-51DB-29A3336199BE">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-22 20:51:29 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>DOM3000005</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ZIP" id="A0F40A81-F55A-8CE2-8820-64FF11149300">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-22 20:51:29 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>DOM3000005</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="INVOICE_NUMBER" id="75CCA638-4703-D2C2-4A2B-A4A9299A2F2D">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-22 20:52:20 UTC</createdTime>
+<generatorID>5A18564A-3D08-C658-85BB-E0DBCB7EB346</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<referedAttribute>8EAFDBC3-0E58-E792-80F3-09CCB2D00FA6</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<domain>DOM2025170</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PATRON_ID" id="637790CA-FF12-402B-CBA9-32812BF97CAA">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-22 20:52:36 UTC</createdTime>
+<generatorID>235918C2-391E-6513-18E2-5550C68F24D5</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>8B15A381-4806-49C2-9E97-D83573FBF2D7</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<domain>DOM2025170</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F6D8E517-D48E-7763-6FFA-DEB814EBE5A0" name="PATRON PK">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-22 20:51:29 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1FAEF83E-B3B1-816F-7981-911D563D8317</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

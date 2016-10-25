@@ -1,0 +1,56 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="82DED432-1C0E-1048-E1F4-D79FE89052E9" name="PRODUCTION">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-21 17:18:28 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="PRODUCTION_ID" id="C05AF660-13C0-A24A-309D-3B989BD50C1A">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-21 17:31:39 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<domain>DOM2025170</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DATE" id="13543A90-445E-BBB5-ADB1-AD28AB5058B6">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-21 17:31:48 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM3000001</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EVALUATION" id="9CE2399F-2E7D-1829-FA38-C5D0304FA991">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-22 20:58:33 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>DOM3000005</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="880CEE7F-D551-F1F6-00AE-027CD00C1144" name="PRODUCTION PK">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-21 17:31:46 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C05AF660-13C0-A24A-309D-3B989BD50C1A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

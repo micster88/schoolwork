@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4904463E-F6DC-8598-B025-92FDF7C5D1D9" name="TICKET">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-21 17:18:59 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="TICKET_ID" id="B483353E-AB96-D6F7-32C6-FF4F2C6BD5A9">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-21 17:33:16 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<domain>DOM2025170</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PRICE" id="04B73069-C922-D8D6-302E-27C8CA1E3220">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-21 17:34:21 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<domain>DOM2025070</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SEAT_ID" id="7CEFE416-BF34-32FA-13A4-205066D7E23A">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-22 20:43:14 UTC</createdTime>
+<generatorID>F0276B34-56CE-AC81-E9B0-FDA65E57672F</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<referedAttribute>58F5676D-3D64-51EA-1DE9-51AB051F2C2D</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<domain>DOM2025170</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="INVOICE_NUMBER" id="8E440936-6511-90B9-0B59-4F8BEC9DC51C">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-22 20:49:51 UTC</createdTime>
+<generatorID>D04F4551-554C-A1BD-D2B0-F36703479AB6</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<referedAttribute>8EAFDBC3-0E58-E792-80F3-09CCB2D00FA6</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<domain>DOM2025170</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FB2C4C3C-6D98-6675-5730-2AF64C423A92" name="TICKET PK">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-21 17:33:33 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B483353E-AB96-D6F7-32C6-FF4F2C6BD5A9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

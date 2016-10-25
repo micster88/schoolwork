@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="22B40066-964C-7988-D470-0E1FBEBD350B" name="CAST">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-21 17:18:45 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CHARACTER" id="D32EB2F3-E2F5-FE19-F443-F35D8859FBE9">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-21 17:30:36 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>DOM3000005</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PRODUCTION_ID" id="985788BE-D445-A324-0149-AB5824195206">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-22 21:23:53 UTC</createdTime>
+<generatorID>1E9BE841-4FA6-B7C4-0BE3-737FF6E80DB7</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<referedAttribute>C05AF660-13C0-A24A-309D-3B989BD50C1A</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<domain>DOM2025170</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MEMBER_ID" id="17890F40-8E9D-6038-651A-70E094F167DD">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-22 21:41:38 UTC</createdTime>
+<generatorID>E389C04C-3BEA-2F61-3D5F-98E64DD20A35</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<referedAttribute>6A164243-A5D6-B7CB-5DAB-6969206E3828</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<domain>DOM2025170</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>
