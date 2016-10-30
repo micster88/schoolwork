@@ -5,12 +5,12 @@ CREATE TABLE BUYER
     BUYER_ID CHAR
     --  WARNING: CHAR size not specified
     NOT NULL ,
-    FIRST_NAME          CHAR (256) ,
-    LAST_NAME           CHAR (256) ,
-    STREET              CHAR (256) ,
-    CITY                CHAR (256) ,
-    STATE               CHAR (256) ,
-    ZIP                 CHAR (256) ,
+    FIRST_NAME          CHAR (10) ,
+    LAST_NAME           CHAR (10) ,
+    STREET              CHAR (20) ,
+    CITY                CHAR (10) ,
+    STATE               CHAR (2) ,
+    ZIP                 CHAR (7) ,
     SALE_INVOICE_NUMBER CHAR
     --  WARNING: CHAR size not specified
     NOT NULL ,
@@ -27,7 +27,7 @@ ALTER TABLE BUYER ADD CONSTRAINT BUYER_PK PRIMARY KEY ( BUYER_ID ) ;
 
 CREATE TABLE CAST
   (
-    CHARACTER         CHAR (256) ,
+    CHARACTER         CHAR (30) ,
     MEMBERS_MEMBER_ID CHAR
     --  WARNING: CHAR size not specified
     NOT NULL ,
@@ -39,7 +39,7 @@ ALTER TABLE CAST ADD CONSTRAINT CAST_PK PRIMARY KEY ( CAST_ID ) ;
 CREATE TABLE COST
   (
     AMOUNT                   NUMBER ,
-    REASON                   CHAR (256) ,
+    REASON                   CHAR (30) ,
     PRODUCTION_PRODUCTION_ID CHAR
     --  WARNING: CHAR size not specified
   ) ;
@@ -47,8 +47,8 @@ CREATE TABLE COST
 
 CREATE TABLE COUNCILMAN
   (
-    POSTITION         CHAR (256) ,
-    YEAR              CHAR (256) ,
+    POSTITION         CHAR (10) ,
+    YEAR              CHAR (4) ,
     MEMBERS_MEMBER_ID CHAR
     --  WARNING: CHAR size not specified
     NOT NULL
@@ -59,7 +59,7 @@ CREATE TABLE DUES
   (
     PAID_FULL         CHAR (1) ,
     PAID_AMOUNT       NUMBER ,
-    YEAR              CHAR (256) ,
+    YEAR              CHAR (4) ,
     MEMBERS_MEMBER_ID CHAR
     --  WARNING: CHAR size not specified
     NOT NULL
@@ -71,18 +71,17 @@ CREATE TABLE MEMBERS
     MEMBER_ID CHAR
     --  WARNING: CHAR size not specified
     NOT NULL ,
-    FIRST_NAME       CHAR (256) ,
-    LAST_NAME        CHAR (256) ,
-    ROLE             CHAR (256) ,
-    PHONE            CHAR (256) ,
-    EMAIL            CHAR (256) ,
-    STREET           CHAR (256) ,
-    CITY             CHAR (256) ,
-    STATE            CHAR (256) ,
-    ZIP              CHAR (256) ,
+    FIRST_NAME       CHAR (10) ,
+    LAST_NAME        CHAR (10) ,
+    ROLE             CHAR (10) ,
+    PHONE            CHAR (10) ,
+    EMAIL            CHAR (20) ,
+    STREET           CHAR (20) ,
+    CITY             CHAR (10) ,
+    STATE            CHAR (2) ,
+    ZIP              CHAR (7) ,
     JOIN_DATE        DATE ,
-    ACTIVE           CHAR (1) ,
-    WORKER_WORKER_ID NUMBER
+    ACTIVE           CHAR (1)
   ) ;
 ALTER TABLE MEMBERS ADD CONSTRAINT MEMBERS_PK PRIMARY KEY ( MEMBER_ID ) ;
 
@@ -92,12 +91,14 @@ CREATE TABLE PATRON
     PATRON_ID CHAR
     --  WARNING: CHAR size not specified
     NOT NULL ,
-    FIRST_NAME     CHAR (256) ,
-    LAST_NAME      CHAR (256) ,
-    STREET         CHAR (256) ,
-    CITY           CHAR (256) ,
-    STATE          CHAR (256) ,
-    ZIP            CHAR (256) ,
+    FIRST_NAME     CHAR (10) ,
+    LAST_NAME      CHAR (10) ,
+    PHONE            CHAR (10) ,
+    EMAIL            CHAR (20) ,
+    STREET         CHAR (10) ,
+    CITY           CHAR (10) ,
+    STATE          CHAR (2) ,
+    ZIP            CHAR (7) ,
     BUYER_BUYER_ID CHAR
     --  WARNING: CHAR size not specified
   ) ;
@@ -114,11 +115,11 @@ CREATE TABLE PLAY
     PLAY_ID CHAR
     --  WARNING: CHAR size not specified
     NOT NULL ,
-    NAME              CHAR (256) ,
+    NAME              CHAR (50) ,
     ACTS              NUMBER ,
-    AUTHOR_FIRST_NAME CHAR (256) ,
-    AUTHOR_LAST_NAME  CHAR (256) ,
-    TYPE              CHAR (256)
+    AUTHOR_FIRST_NAME CHAR (10) ,
+    AUTHOR_LAST_NAME  CHAR (10) ,
+    TYPE              CHAR (8)
   ) ;
 ALTER TABLE PLAY ADD CONSTRAINT PLAY_PK PRIMARY KEY ( PLAY_ID ) ;
 
@@ -152,7 +153,7 @@ CREATE TABLE PRODUCTION
     --  WARNING: CHAR size not specified
     NOT NULL ,
     "DATE"       DATE ,
-    EVALUATION   CHAR (256) ,
+    EVALUATION   CHAR (5) ,
     PLAY_PLAY_ID CHAR
     --  WARNING: CHAR size not specified
     ,
@@ -203,8 +204,8 @@ CREATE TABLE SPECIALIST
     SPECIALIST_ID CHAR
     --  WARNING: CHAR size not specified
     NOT NULL ,
-    FIRST_NAME       CHAR (256) ,
-    LAST_NAME        CHAR (256) ,
+    FIRST_NAME       CHAR (10) ,
+    LAST_NAME        CHAR (10) ,
     PAY              NUMBER ,
     WORKER_WORKER_ID NUMBER
   ) ;
@@ -213,7 +214,7 @@ ALTER TABLE SPECIALIST ADD CONSTRAINT SPECIALIST_PK PRIMARY KEY ( SPECIALIST_ID 
 
 CREATE TABLE SPONSOR
   (
-    NAME       CHAR (256) ,
+    NAME       CHAR (20) ,
     DONATION   NUMBER ,
     SPONSOR_ID NUMBER NOT NULL
   ) ;
@@ -226,7 +227,7 @@ CREATE TABLE TICKET
     --  WARNING: CHAR size not specified
     NOT NULL ,
     PRICE                    NUMBER ,
-    SEATNUM                  CHAR (256) ,
+    SEATNUM                  CHAR (5) ,
     PRODUCTION_PRODUCTION_ID CHAR
     --  WARNING: CHAR size not specified
     NOT NULL ,
@@ -239,7 +240,7 @@ ALTER TABLE TICKET ADD CONSTRAINT TICKET_PK PRIMARY KEY ( TICKET_ID ) ;
 
 CREATE TABLE WORKER
   (
-    JOB                      CHAR (256) ,
+    JOB                      CHAR (20) ,
     PRODUCTION_PRODUCTION_ID CHAR
     --  WARNING: CHAR size not specified
     ,
@@ -280,9 +281,9 @@ ALTER TABLE COUNCILMAN ADD CONSTRAINT COUNCILMAN_MEMBERS_FK FOREIGN KEY ( MEMBER
 
 ALTER TABLE DUES ADD CONSTRAINT DUES_MEMBERS_FK FOREIGN KEY ( MEMBERS_MEMBER_ID ) REFERENCES MEMBERS ( MEMBER_ID ) ;
 
-ALTER TABLE Relation_3 ADD CONSTRAINT FK_ASS_14 FOREIGN KEY ( CAST_CAST_ID ) REFERENCES CAST ( CAST_ID ) ;
+ALTER TABLE PRODUCTION_CAST ADD CONSTRAINT FK_ASS_14 FOREIGN KEY ( CAST_CAST_ID ) REFERENCES CAST ( CAST_ID ) ;
 
-ALTER TABLE Relation_3 ADD CONSTRAINT FK_ASS_15 FOREIGN KEY ( PRODUCTION_PRODUCTION_ID ) REFERENCES PRODUCTION ( PRODUCTION_ID ) ;
+ALTER TABLE PRODUCTIION_CAST ADD CONSTRAINT FK_ASS_15 FOREIGN KEY ( PRODUCTION_PRODUCTION_ID ) REFERENCES PRODUCTION ( PRODUCTION_ID ) ;
 
 ALTER TABLE WORKING_MEM ADD CONSTRAINT FK_ASS_23 FOREIGN KEY ( MEMBERS_MEMBER_ID ) REFERENCES MEMBERS ( MEMBER_ID ) ;
 
@@ -292,9 +293,9 @@ ALTER TABLE WORKING_SPEC ADD CONSTRAINT FK_ASS_27 FOREIGN KEY ( WORKER_WORKER_ID
 
 ALTER TABLE WORKING_SPEC ADD CONSTRAINT FK_ASS_28 FOREIGN KEY ( SPECIALIST_SPECIALIST_ID ) REFERENCES SPECIALIST ( SPECIALIST_ID ) ;
 
-ALTER TABLE Relation_14 ADD CONSTRAINT FK_ASS_4 FOREIGN KEY ( SPONSOR_SPONSOR_ID ) REFERENCES SPONSOR ( SPONSOR_ID ) ;
+ALTER TABLE SPONSORED ADD CONSTRAINT FK_ASS_4 FOREIGN KEY ( SPONSOR_SPONSOR_ID ) REFERENCES SPONSOR ( SPONSOR_ID ) ;
 
-ALTER TABLE Relation_14 ADD CONSTRAINT FK_ASS_5 FOREIGN KEY ( PRODUCTION_PRODUCTION_ID ) REFERENCES PRODUCTION ( PRODUCTION_ID ) ;
+ALTER TABLE SPONSORED ADD CONSTRAINT FK_ASS_5 FOREIGN KEY ( PRODUCTION_PRODUCTION_ID ) REFERENCES PRODUCTION ( PRODUCTION_ID ) ;
 
 ALTER TABLE PATRON ADD CONSTRAINT PATRON_BUYER_FK FOREIGN KEY ( BUYER_BUYER_ID ) REFERENCES BUYER ( BUYER_ID ) ;
 
@@ -306,13 +307,9 @@ ALTER TABLE PRODUCTION ADD CONSTRAINT PRODUCTION_PLAY_FK FOREIGN KEY ( PLAY_PLAY
 
 ALTER TABLE PRODUCTION ADD CONSTRAINT PRODUCTION_PRODUCER_FK FOREIGN KEY ( PRODUCER_PRODUCER_ID ) REFERENCES PRODUCER ( PRODUCER_ID ) ;
 
-ALTER TABLE PRODUCTION ADD CONSTRAINT Relation_14 FOREIGN KEY ( SPONSOR_SPONSOR_ID ) REFERENCES SPONSOR ( SPONSOR_ID ) ;
+ALTER TABLE PRODUCTION ADD CONSTRAINT SPONSORED FOREIGN KEY ( SPONSOR_SPONSOR_ID ) REFERENCES SPONSOR ( SPONSOR_ID ) ;
 
--- Error - Foreign Key Relation_14v1 has no columns
-
-ALTER TABLE PRODUCTION ADD CONSTRAINT Relation_3 FOREIGN KEY ( CAST_CAST_ID ) REFERENCES CAST ( CAST_ID ) ;
-
--- Error - Foreign Key Relation_3v1 has no columns
+ALTER TABLE PRODUCTION ADD CONSTRAINT PRODUCTION_CAST FOREIGN KEY ( CAST_CAST_ID ) REFERENCES CAST ( CAST_ID ) ;
 
 ALTER TABLE TICKET ADD CONSTRAINT TICKET_PRODUCTION_FK FOREIGN KEY ( PRODUCTION_PRODUCTION_ID ) REFERENCES PRODUCTION ( PRODUCTION_ID ) ;
 
@@ -320,13 +317,7 @@ ALTER TABLE TICKET ADD CONSTRAINT TICKET_SALE_FK FOREIGN KEY ( SALE_INVOICE_NUMB
 
 ALTER TABLE WORKER ADD CONSTRAINT WORKER_PRODUCTION_FK FOREIGN KEY ( PRODUCTION_PRODUCTION_ID ) REFERENCES PRODUCTION ( PRODUCTION_ID ) ;
 
--- Error - Foreign Key WORKING_MEM has no columns
-
-ALTER TABLE MEMBERS ADD CONSTRAINT WORKING_MEMv1 FOREIGN KEY ( WORKER_WORKER_ID ) REFERENCES WORKER ( WORKER_ID ) ;
-
 ALTER TABLE SPECIALIST ADD CONSTRAINT WORKING_SPEC FOREIGN KEY ( WORKER_WORKER_ID ) REFERENCES WORKER ( WORKER_ID ) ;
-
--- Error - Foreign Key WORKING_SPECv1 has no columns
 
 CREATE SEQUENCE CAST_CAST_ID_SEQ START WITH 1 NOCACHE ORDER ;
 CREATE OR REPLACE TRIGGER CAST_CAST_ID_TRG BEFORE
@@ -350,47 +341,40 @@ CREATE SEQUENCE WORKER_WORKER_ID_SEQ START WITH 1 NOCACHE ORDER ;
 CREATE OR REPLACE TRIGGER WORKER_WORKER_ID_TRG BEFORE
   INSERT ON WORKER FOR EACH ROW WHEN (NEW.WORKER_ID IS NULL) BEGIN :NEW.WORKER_ID := WORKER_WORKER_ID_SEQ.NEXTVAL;
 END;
-/
+
+--Setting Up Tables Above
+
+ --Plays Insert
+INSERT INTO PLAY VALUES(0, 'MacBeth', 5, 'William', 'Shakespear', 'Tragety');
+
+INSERT INTO PLAY VALUES(1, 'Romeo and Juliet', 5, 'William', 'Shakespear', 'Romance');
+
+INSERT INTO PLAY VALUES(2, 'Hamlet', 5, 'William', 'Shakespear', 'Tragedy');
+
+INSERT INTO PLAY VALUES(3, 'The Importance of Being Earnest', 5, 'Oscar',
+'Wilde', 'Comedy');
+
+INSERT INTO PLAY VALUES(4, 'The Crucible', 5, 'Arthur', 'Miller', 'Tragedy');
+
+--Members Insert
+INSERT INTO MEMBERS VALUES(0, 'Bob', 'Bobberton', 'Actor', '1234567891', 
+'bboberton@gmail.com', '1 First St', 'Bobsville', 'NC', '28941', '11-OCT-16', '1');
+
+INSERT INTO MEMBERS VALUES(1, 'Han', 'Some', 'Actor', '4658746454', 
+'iamhansome@gmail.com', '5 Lane Drive', 'Zeville', 'NC', '26592', '1-JAN-5', '1');
+
+INSERT INTO MEMBERS VALUES(2, 'Pattie', 'McCake', 'Actor', '546554135', 
+'pattiecakes@mail.com', '8 Bakersfield Lane', 'Zeville', 'NC', '26592', '1-JAN-30', '1');
+
+INSERT INTO MEMBERS VALUES(3, 'Strong', 'McLifts', 'Worker', '5546817654', 
+'pickstuffup@mail.com', '85 Weight Ave', 'Liftston', 'NC', '26592', '15-MAY-15', '1');
+
+INSERT INTO MEMBERS VALUES(4, 'Britney', 'Lights', 'Worker', '8952135648', 
+'brightlight@mail.com', '55 Blind St', 'Bobsville', 'NC', '28941', '2-APR-12', '1');
+
+INSERT INTO MEMBERS VALUES(5, 'Quinton', 'Quits', 'Worker', '546876135', 
+'quintonquit@mail.com', '1 Left Lane', 'Zeville', 'NC', '26592', '5-NOV-01', '0');
 
 
--- Oracle SQL Developer Data Modeler Summary Report: 
--- 
--- CREATE TABLE                            19
--- CREATE INDEX                             5
--- ALTER TABLE                             42
--- CREATE VIEW                              0
--- ALTER VIEW                               0
--- CREATE PACKAGE                           0
--- CREATE PACKAGE BODY                      0
--- CREATE PROCEDURE                         0
--- CREATE FUNCTION                          0
--- CREATE TRIGGER                           4
--- ALTER TRIGGER                            0
--- CREATE COLLECTION TYPE                   0
--- CREATE STRUCTURED TYPE                   0
--- CREATE STRUCTURED TYPE BODY              0
--- CREATE CLUSTER                           0
--- CREATE CONTEXT                           0
--- CREATE DATABASE                          0
--- CREATE DIMENSION                         0
--- CREATE DIRECTORY                         0
--- CREATE DISK GROUP                        0
--- CREATE ROLE                              0
--- CREATE ROLLBACK SEGMENT                  0
--- CREATE SEQUENCE                          4
--- CREATE MATERIALIZED VIEW                 0
--- CREATE SYNONYM                           0
--- CREATE TABLESPACE                        0
--- CREATE USER                              0
--- 
--- DROP TABLESPACE                          0
--- DROP DATABASE                            0
--- 
--- REDACTION POLICY                         0
--- 
--- ORDS DROP SCHEMA                         0
--- ORDS ENABLE SCHEMA                       0
--- ORDS ENABLE OBJECT                       0
--- 
--- ERRORS                                   4
--- WARNINGS                                25
+ 
+ 
