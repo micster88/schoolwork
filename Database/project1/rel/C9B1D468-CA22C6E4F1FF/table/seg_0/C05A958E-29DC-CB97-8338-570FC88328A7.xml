@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C05A958E-29DC-CB97-8338-570FC88328A7" name="WORKING_MEM">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:45:00 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MEMBERS_MEMBER_ID" id="96DE975F-5DE6-FA6F-333D-20F65EFA265F">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:45:00 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<domain>DOM2025170</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B9F7C39E-A7A1-C19F-25AB-1F9EC5CA5D03" referredColumn="DF18B861-D790-A637-62A8-0999C47850E4"/>
+</associations>
+</Column>
+<Column name="WORKER_WORKER_ID" id="51477782-AEED-34A8-C2B6-ACF8C846F992">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:45:00 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BBB52032-A621-3D51-A555-D4B3F247513B" referredColumn="17D53E00-B26D-FABA-5E43-A001927FED61"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="525A2482-EBD3-64CE-20E4-FE5B7D2042E6" name="WORKING_MEM_PK">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:45:00 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="96DE975F-5DE6-FA6F-333D-20F65EFA265F"/>
+<colUsage columnID="51477782-AEED-34A8-C2B6-ACF8C846F992"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8CBFD45C-3879-F3B2-FC2C-23FDADC3B000" name="FK_ASS_23">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:45:00 UTC</createdTime>
+<generatorID>7A96F03F-E8BB-1291-F7E9-FCF356FF76A3</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="96DE975F-5DE6-FA6F-333D-20F65EFA265F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="684485C8-B6AF-E6C3-1BE0-13E4841D74F1" name="FK_ASS_24">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:45:00 UTC</createdTime>
+<generatorID>7A96F03F-E8BB-1291-F7E9-FCF356FF76A3</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="51477782-AEED-34A8-C2B6-ACF8C846F992"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

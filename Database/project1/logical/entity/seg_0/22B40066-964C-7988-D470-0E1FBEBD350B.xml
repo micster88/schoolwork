@@ -3,6 +3,9 @@
 <createdBy>Macintosh</createdBy>
 <createdTime>2016-10-21 17:18:45 UTC</createdTime>
 <ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="C9B1D468-8C3E-D3A8-852C-CA22C6E4F1FF" value="true"/>
+</engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -16,21 +19,13 @@
 <createdBy>Macintosh</createdBy>
 <createdTime>2016-10-21 17:30:36 UTC</createdTime>
 <ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="C9B1D468-8C3E-D3A8-852C-CA22C6E4F1FF" value="true"/>
+</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
 <domain>DOM3000005</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="PRODUCTION_ID" id="985788BE-D445-A324-0149-AB5824195206">
-<createdBy>Macintosh</createdBy>
-<createdTime>2016-10-22 21:23:53 UTC</createdTime>
-<generatorID>1E9BE841-4FA6-B7C4-0BE3-737FF6E80DB7</generatorID>
-<ownerDesignName>project1</ownerDesignName>
-<referedAttribute>C05AF660-13C0-A24A-309D-3B989BD50C1A</referedAttribute>
-<use>0</use>
-<logicalDatatype>LOGDT057</logicalDatatype>
-<domain>DOM2025170</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="MEMBER_ID" id="17890F40-8E9D-6038-651A-70E094F167DD">
@@ -38,6 +33,9 @@
 <createdTime>2016-10-22 21:41:38 UTC</createdTime>
 <generatorID>E389C04C-3BEA-2F61-3D5F-98E64DD20A35</generatorID>
 <ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="C9B1D468-8C3E-D3A8-852C-CA22C6E4F1FF" value="true"/>
+</engineerTo>
 <referedAttribute>6A164243-A5D6-B7CB-5DAB-6969206E3828</referedAttribute>
 <use>0</use>
 <logicalDatatype>LOGDT057</logicalDatatype>

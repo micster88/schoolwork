@@ -3,6 +3,9 @@
 <createdBy>Macintosh</createdBy>
 <createdTime>2016-10-21 17:17:56 UTC</createdTime>
 <ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="C9B1D468-8C3E-D3A8-852C-CA22C6E4F1FF" value="true"/>
+</engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -16,6 +19,9 @@
 <createdBy>Macintosh</createdBy>
 <createdTime>2016-10-21 17:26:29 UTC</createdTime>
 <ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="C9B1D468-8C3E-D3A8-852C-CA22C6E4F1FF" value="true"/>
+</engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT057</logicalDatatype>
 <domain>DOM2025170</domain>
@@ -25,6 +31,9 @@
 <createdBy>Macintosh</createdBy>
 <createdTime>2016-10-21 17:26:41 UTC</createdTime>
 <ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="C9B1D468-8C3E-D3A8-852C-CA22C6E4F1FF" value="true"/>
+</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
@@ -35,6 +44,9 @@
 <createdBy>Macintosh</createdBy>
 <createdTime>2016-10-21 17:26:47 UTC</createdTime>
 <ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="C9B1D468-8C3E-D3A8-852C-CA22C6E4F1FF" value="true"/>
+</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -45,6 +57,9 @@
 <createdBy>Macintosh</createdBy>
 <createdTime>2016-10-21 17:27:46 UTC</createdTime>
 <ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="C9B1D468-8C3E-D3A8-852C-CA22C6E4F1FF" value="true"/>
+</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
@@ -55,6 +70,9 @@
 <createdBy>Macintosh</createdBy>
 <createdTime>2016-10-21 17:28:06 UTC</createdTime>
 <ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="C9B1D468-8C3E-D3A8-852C-CA22C6E4F1FF" value="true"/>
+</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
@@ -65,21 +83,13 @@
 <createdBy>Macintosh</createdBy>
 <createdTime>2016-10-21 17:28:23 UTC</createdTime>
 <ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="C9B1D468-8C3E-D3A8-852C-CA22C6E4F1FF" value="true"/>
+</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
 <domain>DOM3000005</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="PRODUCTION_ID" id="0E20836A-5D86-EFCD-F512-0457C09EC2F9">
-<createdBy>Macintosh</createdBy>
-<createdTime>2016-10-22 20:34:24 UTC</createdTime>
-<generatorID>53620F40-BA69-0228-B337-3E52F398FD47</generatorID>
-<ownerDesignName>project1</ownerDesignName>
-<referedAttribute>C05AF660-13C0-A24A-309D-3B989BD50C1A</referedAttribute>
-<use>0</use>
-<logicalDatatype>LOGDT057</logicalDatatype>
-<domain>DOM2025170</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
@@ -88,6 +98,9 @@
 <createdBy>Macintosh</createdBy>
 <createdTime>2016-10-21 17:28:45 UTC</createdTime>
 <ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="C9B1D468-8C3E-D3A8-852C-CA22C6E4F1FF" value="true"/>
+</engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>8C7F1DBF-E8F8-8612-4360-2DAD68B6CBE1</attributeRef>

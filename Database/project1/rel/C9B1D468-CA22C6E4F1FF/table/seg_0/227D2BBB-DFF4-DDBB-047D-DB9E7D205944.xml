@@ -1,0 +1,173 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="227D2BBB-DFF4-DDBB-047D-DB9E7D205944" name="BUYER">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:44:59 UTC</createdTime>
+<generatorID>8E9AE81D-F727-703B-7DBB-DE924387DA01</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="BUYER_ID" id="FB5F84A7-DC96-B405-E54F-6930BB9BD769">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:44:59 UTC</createdTime>
+<generatorID>1FAEF83E-B3B1-816F-7981-911D563D8317</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<domain>DOM2025170</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FIRST_NAME" id="33C7EB59-C837-1F7D-7503-B8F05C3D52B8">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:44:59 UTC</createdTime>
+<generatorID>BD808EAA-3F55-58E4-3E9A-90378D913E2C</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>DOM3000005</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LAST_NAME" id="AD837757-6918-7EB0-AC79-4E7DE83C02A2">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:44:59 UTC</createdTime>
+<generatorID>EF6A05C4-2A9A-6690-FC2C-DF6FF1692061</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>DOM3000005</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STREET" id="70194037-2C9B-FD5B-A0E0-1FA8C874761D">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:44:59 UTC</createdTime>
+<generatorID>1A18E715-743A-C724-476A-C51BC016F63D</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>DOM3000005</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CITY" id="D72CD631-DC0E-6672-6980-C15B44F520A3">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:44:59 UTC</createdTime>
+<generatorID>06AB7D4D-089C-BE42-37C7-B45A09CF3565</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>DOM3000005</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATE" id="21824E83-6B36-BC3E-E246-95A0FDEF65A5">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:44:59 UTC</createdTime>
+<generatorID>47EEDFE5-8B78-E4BB-51DB-29A3336199BE</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>DOM3000005</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ZIP" id="38DF6CD3-5070-19F9-1250-6CAD2382C7B6">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:44:59 UTC</createdTime>
+<generatorID>A0F40A81-F55A-8CE2-8820-64FF11149300</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>DOM3000005</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SALE_INVOICE_NUMBER" id="8FF0E8CF-B875-5A64-C2F6-43948377D308">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:44:59 UTC</createdTime>
+<generatorID>75CCA638-4703-D2C2-4A2B-A4A9299A2F2D</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<domain>DOM2025170</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7B610559-450A-D0CA-DA53-BF791492CF4D" referredColumn="55E7252A-7221-9734-C7DE-53CAB284AE65"/>
+</associations>
+</Column>
+<Column name="PATRON_PATRON_ID" id="E0F2BFD4-7DFA-D814-9199-1C280590C3F1">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:44:59 UTC</createdTime>
+<generatorID>637790CA-FF12-402B-CBA9-32812BF97CAA</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<domain>DOM2025170</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B52F53FF-8F63-B5A0-CAEC-229D9EA49B4E" referredColumn="3453AE51-C8AD-0D2B-45F3-66317667BF73"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="86C8B01A-BEA4-D413-8716-2D653FAD53FA" name="BUYER_PK">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:44:59 UTC</createdTime>
+<generatorID>F6D8E517-D48E-7763-6FFA-DEB814EBE5A0</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FB5F84A7-DC96-B405-E54F-6930BB9BD769"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="066F79C0-55E3-1E7F-CE9B-6C55DCEC9C2B" name="BUYER__IDX">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:45:00 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>235918C2-391E-6513-18E2-5550C68F24D5</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="E0F2BFD4-7DFA-D814-9199-1C280590C3F1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4CFB0704-4BB0-B84B-3089-7F754A04A3C0" name="BUYER_SALE_FK">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:45:00 UTC</createdTime>
+<generatorID>5A18564A-3D08-C658-85BB-E0DBCB7EB346</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8FF0E8CF-B875-5A64-C2F6-43948377D308"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B3DA5E66-00B9-47B9-6562-617860D3951A" name="BUYER_PATRON_FK">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:45:00 UTC</createdTime>
+<generatorID>235918C2-391E-6513-18E2-5550C68F24D5</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E0F2BFD4-7DFA-D814-9199-1C280590C3F1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A6B0F28B-8C60-43A8-E316-35EEB7CE733A" name="COUNCILMAN">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:44:59 UTC</createdTime>
+<generatorID>03279169-AB25-9F56-0117-4E482C842AEF</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="POSTITION" id="3D0C7E35-8774-C0D1-1139-B202826F9406">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:44:59 UTC</createdTime>
+<generatorID>A19D337B-F341-29C9-1EB9-A1E732822C7E</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>DOM3000005</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="YEAR" id="CD05F3CB-8374-C2CA-6FC5-C47661218EC8">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:44:59 UTC</createdTime>
+<generatorID>CB6311E4-423A-DC2D-0FE4-91092A1C68CD</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>DOM3000005</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEMBERS_MEMBER_ID" id="18C0EB35-60C2-2615-297F-42070BAF1992">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:44:59 UTC</createdTime>
+<generatorID>DE30CA72-4034-7E85-DB60-99EA41C17AAF</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<domain>DOM2025170</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D0EDFC97-AE2F-A087-0A7B-AB929F8E0504" referredColumn="DF18B861-D790-A637-62A8-0999C47850E4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0B8AC926-9D91-6632-4029-88981B21D355" name="COUNCILMAN_MEMBERS_FK">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:45:00 UTC</createdTime>
+<generatorID>0E30CD2D-388E-ABD2-CC5B-B4E8E19BCA17</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="18C0EB35-60C2-2615-297F-42070BAF1992"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

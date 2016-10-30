@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9F5A91D6-57E7-F33C-6B60-E4DB19A53CEC" name="SPONSOR">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:44:59 UTC</createdTime>
+<generatorID>F89C8E81-773C-3AD4-4C9D-A2BD9DC67924</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NAME" id="7E762E4B-EEAB-0AEB-47BC-DE866CD626FC">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:44:59 UTC</createdTime>
+<generatorID>E6B35EF6-557E-B096-CA5C-80ACDE5EB7C2</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>DOM3000005</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DONATION" id="BD0BD805-691C-AA49-BCD6-41C19FFCED16">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:44:59 UTC</createdTime>
+<generatorID>928CF6F3-D4EA-5251-39B8-FF70DA4E0AE8</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<domain>DOM2025070</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SPONSOR_ID" id="D8D5093A-9683-10AA-3725-D72956A86EE1">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:45:00 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9A792D44-0488-DE92-0161-57D6E0345DEA" name="SPONSOR_PK">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:45:00 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="D8D5093A-9683-10AA-3725-D72956A86EE1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7553E96C-38C2-8B4F-B64F-E98842A6852E" name="Relation_14v1">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:45:00 UTC</createdTime>
+<generatorID>EF378BE2-7C1C-0C37-E353-9F707F746222</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+</indexes>
+</Table>

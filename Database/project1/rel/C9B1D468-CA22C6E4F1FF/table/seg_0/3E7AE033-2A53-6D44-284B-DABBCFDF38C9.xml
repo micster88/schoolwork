@@ -1,0 +1,174 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3E7AE033-2A53-6D44-284B-DABBCFDF38C9" name="PRODUCTION">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:44:59 UTC</createdTime>
+<generatorID>82DED432-1C0E-1048-E1F4-D79FE89052E9</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PRODUCTION_ID" id="F0DA339B-D8CF-B863-6D95-FA36DAD32534">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:44:59 UTC</createdTime>
+<generatorID>C05AF660-13C0-A24A-309D-3B989BD50C1A</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<domain>DOM2025170</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE" id="9DF191BB-C0BF-1305-0F5E-388C35089CFC">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:44:59 UTC</createdTime>
+<generatorID>13543A90-445E-BBB5-ADB1-AD28AB5058B6</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM3000001</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EVALUATION" id="D9158E0B-D216-944F-15DF-EAFCEF5F79E0">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:44:59 UTC</createdTime>
+<generatorID>9CE2399F-2E7D-1829-FA38-C5D0304FA991</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>DOM3000005</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PLAY_PLAY_ID" id="18D05B18-EBAC-1B59-1A1C-708DA5BE07C7">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:44:59 UTC</createdTime>
+<generatorID>B75EB085-DA63-1150-4179-8D96C738DD97</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<domain>DOM2025170</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1BFF1230-464C-7B21-52A0-248157AF93F6" referredColumn="96E78994-1554-AFE9-DA6E-33F86B205272"/>
+</associations>
+</Column>
+<Column name="SPONSOR_SPONSOR_ID" id="46615C4E-E9CF-F5E2-4448-B8642B75E6A6">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:45:00 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="57A77BF3-5032-A32E-5A9E-51CFE9DB7662" referredColumn="D8D5093A-9683-10AA-3725-D72956A86EE1"/>
+</associations>
+</Column>
+<Column name="CAST_CAST_ID" id="D4D6EB43-B8A5-5BB9-39CA-466B7D452333">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:45:00 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B7C28097-DE47-A6A7-D50D-9621D7F84184" referredColumn="60D99F8D-8B84-6B8E-A85F-C463FC7F2F3A"/>
+</associations>
+</Column>
+<Column name="PRODUCER_PRODUCER_ID" id="BA0D8FC5-B24E-89BF-7675-DD7171DBF758">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:45:00 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DE1FCA6C-940A-8265-C7A4-1025DD38F340" referredColumn="67BC26F1-0F65-9F45-CD1D-CD4262E9531E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="07E2C50D-2CB7-AB82-7AF9-FCEEE06E2DD0" name="PRODUCTION_PK">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:44:59 UTC</createdTime>
+<generatorID>880CEE7F-D551-F1F6-00AE-027CD00C1144</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F0DA339B-D8CF-B863-6D95-FA36DAD32534"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E3717FB3-5CFA-A763-57E4-908273638603" name="PRODUCTION__IDX">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:45:00 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>C9BD2F10-A289-2651-229C-E6B2405DFE33</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="BA0D8FC5-B24E-89BF-7675-DD7171DBF758"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="60094448-74B4-0D54-B86E-CB91A36D07CE" name="Relation_14">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:45:00 UTC</createdTime>
+<generatorID>EF378BE2-7C1C-0C37-E353-9F707F746222</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="46615C4E-E9CF-F5E2-4448-B8642B75E6A6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D4832D31-D1F0-2C6A-FFB8-77B5C213F998" name="Relation_3">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:45:00 UTC</createdTime>
+<generatorID>1E9BE841-4FA6-B7C4-0BE3-737FF6E80DB7</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D4D6EB43-B8A5-5BB9-39CA-466B7D452333"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D465E546-EF86-4EC6-A210-8BFA30645706" name="PRODUCTION_PRODUCER_FK">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:45:00 UTC</createdTime>
+<generatorID>C9BD2F10-A289-2651-229C-E6B2405DFE33</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BA0D8FC5-B24E-89BF-7675-DD7171DBF758"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CC0C4673-C8FB-C8D9-B90D-79B790C2C04B" name="PRODUCTION_PLAY_FK">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-10-27 15:45:00 UTC</createdTime>
+<generatorID>53620F40-BA69-0228-B337-3E52F398FD47</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="18D05B18-EBAC-1B59-1A1C-708DA5BE07C7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

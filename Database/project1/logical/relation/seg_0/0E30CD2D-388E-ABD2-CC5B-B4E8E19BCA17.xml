@@ -3,13 +3,16 @@
 <createdBy>Macintosh</createdBy>
 <createdTime>2016-10-22 20:38:59 UTC</createdTime>
 <ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="C9B1D468-8C3E-D3A8-852C-CA22C6E4F1FF" value="true"/>
+</engineerTo>
 <sourcePk>E8C850AF-D053-4117-BF37-EF51EC32A1F2</sourcePk>
 <identifying>false</identifying>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
 <sourceEntity>60057A79-0FC4-96DB-6124-D3AB6AB3FC1E</sourceEntity>
-<targetCardinalityString>1</targetCardinalityString>
+<targetCardinalityString>*</targetCardinalityString>
 <targetEntity>03279169-AB25-9F56-0117-4E482C842AEF</targetEntity>
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>

@@ -3,6 +3,9 @@
 <createdBy>Macintosh</createdBy>
 <createdTime>2016-10-22 20:34:09 UTC</createdTime>
 <ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="C9B1D468-8C3E-D3A8-852C-CA22C6E4F1FF" value="true"/>
+</engineerTo>
 <sourcePk>862A660D-179E-60FA-07D1-D9724076CF72</sourcePk>
 <targetPk>880CEE7F-D551-F1F6-00AE-027CD00C1144</targetPk>
 <identifying>false</identifying>
@@ -10,7 +13,7 @@
 <optionalTarget>true</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
 <sourceEntity>7E7E3365-588F-B8A2-D0EB-A51050C6FF8C</sourceEntity>
-<targetCardinalityString>1</targetCardinalityString>
+<targetCardinalityString>*</targetCardinalityString>
 <targetEntity>82DED432-1C0E-1048-E1F4-D79FE89052E9</targetEntity>
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>

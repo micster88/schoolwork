@@ -1,8 +1,11 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D90CD70C-1517-DE35-B2D3-A6BA1E8913FD" name="WORKER">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D90CD70C-1517-DE35-B2D3-A6BA1E8913FD" name="JOB">
 <createdBy>Macintosh</createdBy>
 <createdTime>2016-10-21 17:18:53 UTC</createdTime>
 <ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="C9B1D468-8C3E-D3A8-852C-CA22C6E4F1FF" value="true"/>
+</engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -16,21 +19,13 @@
 <createdBy>Macintosh</createdBy>
 <createdTime>2016-10-21 17:33:00 UTC</createdTime>
 <ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="C9B1D468-8C3E-D3A8-852C-CA22C6E4F1FF" value="true"/>
+</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
 <domain>DOM3000005</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="MEMBER_ID" id="6A352FCB-EBC1-5199-1C0C-AE8725D6A4CE">
-<createdBy>Macintosh</createdBy>
-<createdTime>2016-10-22 20:24:46 UTC</createdTime>
-<generatorID>7A96F03F-E8BB-1291-F7E9-FCF356FF76A3</generatorID>
-<ownerDesignName>project1</ownerDesignName>
-<referedAttribute>6A164243-A5D6-B7CB-5DAB-6969206E3828</referedAttribute>
-<use>0</use>
-<logicalDatatype>LOGDT057</logicalDatatype>
-<domain>DOM2025170</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="PRODUCTION_ID" id="A474B3DB-C00D-CFC1-5D97-350967CA89F9">
@@ -38,18 +33,11 @@
 <createdTime>2016-10-22 20:27:05 UTC</createdTime>
 <generatorID>F52DB828-F0ED-9B34-815F-72A829CCAA0D</generatorID>
 <ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="C9B1D468-8C3E-D3A8-852C-CA22C6E4F1FF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <referedAttribute>C05AF660-13C0-A24A-309D-3B989BD50C1A</referedAttribute>
-<use>0</use>
-<logicalDatatype>LOGDT057</logicalDatatype>
-<domain>DOM2025170</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="SPECIALIST_ID" id="5D2F110E-8FD6-59DF-E4FC-B2F7686490F0">
-<createdBy>Macintosh</createdBy>
-<createdTime>2016-10-22 20:31:25 UTC</createdTime>
-<generatorID>25549D10-5C28-7D97-D3CF-70EB4CD80675</generatorID>
-<ownerDesignName>project1</ownerDesignName>
-<referedAttribute>AB267CFA-6568-9591-2B56-46C1E0BB65A0</referedAttribute>
 <use>0</use>
 <logicalDatatype>LOGDT057</logicalDatatype>
 <domain>DOM2025170</domain>
