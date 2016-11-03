@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6478A6B4-47FF-CC46-035B-B235AB2C8840" name="SALE">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 20:42:26 UTC</createdTime>
+<generatorID>E8557222-E670-36B1-9359-64D8CF1636FF</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="INVOICE_NUMBER" id="0B18E6F0-DE6B-215A-AD56-C3DA286AC700">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 20:42:26 UTC</createdTime>
+<generatorID>8EAFDBC3-0E58-E792-80F3-09CCB2D00FA6</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<domain>DOM2025170</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE" id="FDB77DF0-919D-DEDF-EBBE-CC3FBBEADE6A">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 20:42:26 UTC</createdTime>
+<generatorID>406DF0E4-036A-BB0E-09B1-56E575C71500</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM3000001</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C116CA15-0156-D897-1586-C402EC48EDDE" name="SALE_PK">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 20:42:26 UTC</createdTime>
+<generatorID>856F76F5-252B-53E2-8E8F-461FFB2D36C3</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0B18E6F0-DE6B-215A-AD56-C3DA286AC700"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

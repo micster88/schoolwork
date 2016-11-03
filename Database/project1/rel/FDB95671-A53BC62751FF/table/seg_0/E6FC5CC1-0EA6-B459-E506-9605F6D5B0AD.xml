@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E6FC5CC1-0EA6-B459-E506-9605F6D5B0AD" name="TICKET">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 20:42:26 UTC</createdTime>
+<generatorID>4904463E-F6DC-8598-B025-92FDF7C5D1D9</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TICKET_ID" id="4DEC523C-C472-D601-77A2-BACF247F5760">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 20:42:26 UTC</createdTime>
+<generatorID>B483353E-AB96-D6F7-32C6-FF4F2C6BD5A9</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<domain>DOM2025170</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRICE" id="B3125198-C90B-7FAB-01FC-56EB39AFC6F2">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 20:42:26 UTC</createdTime>
+<generatorID>04B73069-C922-D8D6-302E-27C8CA1E3220</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<domain>DOM2025070</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEATNUM" id="4FD5962A-01C6-A8AC-44AB-6A1F6A3F7597">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 20:42:26 UTC</createdTime>
+<generatorID>13EC12B9-1F4A-B6AE-7882-0E5E7E21E588</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>DOM3000005</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRODUCTION_PRODUCTION_ID" id="9E92AA72-61E9-F7EE-E193-79A025345067">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 20:42:26 UTC</createdTime>
+<generatorID>722BA67A-5415-F13C-6599-FD60CFD7032D</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<domain>DOM2025170</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ED4671E4-6195-4F01-6C49-9343122D8F6F" referredColumn="2BA66B33-9105-F951-2560-AD401A0446A3"/>
+</associations>
+</Column>
+<Column name="SALE_INVOICE_NUMBER" id="BA611083-EE5B-725F-31E5-F95AE6B8F4F9">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 20:42:26 UTC</createdTime>
+<generatorID>F8536C69-F5AB-A2C5-2285-841B3A658C14</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<domain>DOM2025170</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1EFE2ACB-FC98-9FD0-34E8-C75977DEE6B4" referredColumn="0B18E6F0-DE6B-215A-AD56-C3DA286AC700"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5B098B03-01E5-3A67-8C0F-69DA2342949A" name="TICKET_PK">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 20:42:26 UTC</createdTime>
+<generatorID>FB2C4C3C-6D98-6675-5730-2AF64C423A92</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4DEC523C-C472-D601-77A2-BACF247F5760"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CB63E879-E18D-D9BC-AE9B-F3D642C44B19" name="TICKET_SALE_FK">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 20:42:26 UTC</createdTime>
+<generatorID>D04F4551-554C-A1BD-D2B0-F36703479AB6</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BA611083-EE5B-725F-31E5-F95AE6B8F4F9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D4FA98D0-1F6A-3BBA-DC3F-FB2200601FBA" name="TICKET_PRODUCTION_FK">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 20:42:26 UTC</createdTime>
+<generatorID>7F836672-B5AD-CA1F-D8C6-5180300DB157</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9E92AA72-61E9-F7EE-E193-79A025345067"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,133 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3D78821A-F1DD-ACF9-FB71-93D7A01A5152" name="PATRON">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 20:42:26 UTC</createdTime>
+<generatorID>BFDEA412-239E-61D2-9471-E71377C8D03D</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PATRON_ID" id="620AF3C7-04D5-D857-40A6-A2DBB7A435A7">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 20:42:26 UTC</createdTime>
+<generatorID>8B15A381-4806-49C2-9E97-D83573FBF2D7</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<domain>DOM2025170</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FIRST_NAME" id="5C907AA4-C325-3C62-025A-4F25063BD157">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 20:42:26 UTC</createdTime>
+<generatorID>69C81151-1B25-0BD3-0B4C-E73F092587C4</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>DOM3000005</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LAST_NAME" id="B155A613-2CFA-3196-DC79-40A2B59D0F72">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 20:42:26 UTC</createdTime>
+<generatorID>87F52E19-3EF8-9E05-9C57-DED7319A06A6</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>DOM3000005</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STREET" id="924BE1A5-8A54-8561-9BE8-A4622A2DF30E">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 20:42:26 UTC</createdTime>
+<generatorID>7F28E591-6755-3310-5E70-08EAA062BB63</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>DOM3000005</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CITY" id="7EBA1D3D-C155-5095-D9A6-99EEF76C1297">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 20:42:26 UTC</createdTime>
+<generatorID>90EFB1D8-26CD-4F00-2594-2DB970202738</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>DOM3000005</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATE" id="8C819F08-BC74-38EF-9AAF-0CFB19D5D410">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 20:42:26 UTC</createdTime>
+<generatorID>AB33C170-6D72-5741-EF21-BF39B52B60EF</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>DOM3000005</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ZIP" id="3BBAF8E2-2941-C6A3-9981-59D47211ACCF">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 20:42:26 UTC</createdTime>
+<generatorID>9F4D1205-BD7E-95CC-DFAF-2469BE8C7D34</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>DOM3000005</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BUYER_BUYER_ID" id="5ACE76A5-6B77-4090-9DD9-1207903849DE">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 20:42:26 UTC</createdTime>
+<generatorID>E24F0236-3101-DA73-90D9-99DDF17BC4FA</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<domain>DOM2025170</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="75DD2010-8A7D-E000-CAC2-A99DC388C82F" name="PATRON_PK">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 20:42:26 UTC</createdTime>
+<generatorID>60867263-2F36-B13B-A3A8-642F1E384B6C</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="620AF3C7-04D5-D857-40A6-A2DBB7A435A7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="56BD04B7-A721-C1FB-2131-140BCA97684E" name="PATRON__IDX">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 20:42:26 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>235918C2-391E-6513-18E2-5550C68F24D5</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="5ACE76A5-6B77-4090-9DD9-1207903849DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

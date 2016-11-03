@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A63DA392-9C2E-43C9-979A-F48AB2F308B3" name="CAST">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 20:42:26 UTC</createdTime>
+<generatorID>22B40066-964C-7988-D470-0E1FBEBD350B</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CHARACTER" id="3869E0D7-1CE6-FF9F-F0FD-AFC289E05917">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 20:42:26 UTC</createdTime>
+<generatorID>D32EB2F3-E2F5-FE19-F443-F35D8859FBE9</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>DOM3000005</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEMBERS_ID" id="3CFD8DE4-5764-726A-155E-7AC4495921C0">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 20:42:26 UTC</createdTime>
+<generatorID>17890F40-8E9D-6038-651A-70E094F167DD</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<domain>DOM2025170</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="22B2FD55-0ABF-A712-0E7A-3E1A8F7F54F4" referredColumn="2697ED1D-5B3A-82A4-3FD9-462A5FA4DB6E"/>
+</associations>
+</Column>
+<Column name="CAST_ID" id="3F6C5A15-A31C-3ECF-ADBB-B65756D2D72D">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 21:50:12 UTC</createdTime>
+<generatorID>E6C4AD9C-DEED-86E4-40A8-779532EAC561</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4452FB72-3D6A-7BCC-B893-DE20A518927F" name="CAST_PK">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 21:50:12 UTC</createdTime>
+<generatorID>B04D71D1-1FB5-3685-5D88-0D3687A472F1</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3F6C5A15-A31C-3ECF-ADBB-B65756D2D72D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="20B22650-96E0-D459-6A4F-4E2E934741BF" name="CAST_MEMBERS_FK">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 20:42:26 UTC</createdTime>
+<generatorID>E389C04C-3BEA-2F61-3D5F-98E64DD20A35</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3CFD8DE4-5764-726A-155E-7AC4495921C0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FEA79DE7-9286-1ADD-A973-4965DCD9B067" name="Relation_3v1">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 21:50:12 UTC</createdTime>
+<generatorID>1E9BE841-4FA6-B7C4-0BE3-737FF6E80DB7</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -4,7 +4,7 @@
 <createdTime>2016-10-21 17:18:59 UTC</createdTime>
 <ownerDesignName>project1</ownerDesignName>
 <engineerTo>
-<item key="C9B1D468-8C3E-D3A8-852C-CA22C6E4F1FF" value="true"/>
+<item key="FDB95671-CF05-D42A-6F05-A53BC62751FF" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,7 +20,7 @@
 <createdTime>2016-10-21 17:33:16 UTC</createdTime>
 <ownerDesignName>project1</ownerDesignName>
 <engineerTo>
-<item key="C9B1D468-8C3E-D3A8-852C-CA22C6E4F1FF" value="true"/>
+<item key="FDB95671-CF05-D42A-6F05-A53BC62751FF" value="true"/>
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT057</logicalDatatype>
@@ -32,7 +32,7 @@
 <createdTime>2016-10-21 17:34:21 UTC</createdTime>
 <ownerDesignName>project1</ownerDesignName>
 <engineerTo>
-<item key="C9B1D468-8C3E-D3A8-852C-CA22C6E4F1FF" value="true"/>
+<item key="FDB95671-CF05-D42A-6F05-A53BC62751FF" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
@@ -45,7 +45,7 @@
 <createdTime>2016-10-25 15:24:24 UTC</createdTime>
 <ownerDesignName>project1</ownerDesignName>
 <engineerTo>
-<item key="C9B1D468-8C3E-D3A8-852C-CA22C6E4F1FF" value="true"/>
+<item key="FDB95671-CF05-D42A-6F05-A53BC62751FF" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
@@ -59,7 +59,7 @@
 <generatorID>7F836672-B5AD-CA1F-D8C6-5180300DB157</generatorID>
 <ownerDesignName>project1</ownerDesignName>
 <engineerTo>
-<item key="C9B1D468-8C3E-D3A8-852C-CA22C6E4F1FF" value="true"/>
+<item key="FDB95671-CF05-D42A-6F05-A53BC62751FF" value="true"/>
 </engineerTo>
 <referedAttribute>C05AF660-13C0-A24A-309D-3B989BD50C1A</referedAttribute>
 <use>0</use>
@@ -73,7 +73,7 @@
 <generatorID>D04F4551-554C-A1BD-D2B0-F36703479AB6</generatorID>
 <ownerDesignName>project1</ownerDesignName>
 <engineerTo>
-<item key="C9B1D468-8C3E-D3A8-852C-CA22C6E4F1FF" value="true"/>
+<item key="FDB95671-CF05-D42A-6F05-A53BC62751FF" value="true"/>
 </engineerTo>
 <referedAttribute>8EAFDBC3-0E58-E792-80F3-09CCB2D00FA6</referedAttribute>
 <use>0</use>
@@ -87,8 +87,9 @@
 <createdBy>Macintosh</createdBy>
 <createdTime>2016-10-21 17:33:33 UTC</createdTime>
 <ownerDesignName>project1</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="C9B1D468-8C3E-D3A8-852C-CA22C6E4F1FF" value="true"/>
+<item key="FDB95671-CF05-D42A-6F05-A53BC62751FF" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

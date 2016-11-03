@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1D896513-0D57-B0A2-7671-2D4F2552989D" name="WORKING_SPEC">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 21:03:13 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="JOB_JOB_ID" id="FAC868E4-66F2-8F51-A51C-2AF39F28254B">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 21:03:13 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D27715C2-FD81-E912-A2AF-D603DB9B9548" referredColumn="821F1C16-990E-CCFA-80F0-709F5D3740B8"/>
+</associations>
+</Column>
+<Column name="SPECIALIST_SPECIALIST_ID" id="7E703C63-EAA7-B04A-3019-A3616372E940">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 21:03:13 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<domain>DOM2025170</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="01FA7919-E206-1CF2-D849-1961F6AA0A84" referredColumn="4D719F2E-D87E-6B07-F692-56C606164389"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2AAF8AFA-D6BE-597D-E82F-13041CB9D3D5" name="WORKING_SPEC_PK">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 21:03:13 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FAC868E4-66F2-8F51-A51C-2AF39F28254B"/>
+<colUsage columnID="7E703C63-EAA7-B04A-3019-A3616372E940"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="120CD7EB-8621-2263-5EE3-42DA2A14EC4B" name="FK_ASS_22">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 21:03:13 UTC</createdTime>
+<generatorID>25549D10-5C28-7D97-D3CF-70EB4CD80675</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FAC868E4-66F2-8F51-A51C-2AF39F28254B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5BD99215-3636-E539-C932-736664AED980" name="FK_ASS_23">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 21:03:13 UTC</createdTime>
+<generatorID>25549D10-5C28-7D97-D3CF-70EB4CD80675</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E703C63-EAA7-B04A-3019-A3616372E940"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

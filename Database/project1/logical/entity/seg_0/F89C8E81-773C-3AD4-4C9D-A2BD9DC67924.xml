@@ -4,7 +4,8 @@
 <createdTime>2016-10-21 17:20:23 UTC</createdTime>
 <ownerDesignName>project1</ownerDesignName>
 <engineerTo>
-<item key="C9B1D468-8C3E-D3A8-852C-CA22C6E4F1FF" value="true"/>
+<item key="FDB95671-CF05-D42A-6F05-A53BC62751FF" value="true"/>
+<item key="5388F670-E46C-7E48-FBF1-6A5EF0DB47FC" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,7 +21,8 @@
 <createdTime>2016-10-21 17:37:57 UTC</createdTime>
 <ownerDesignName>project1</ownerDesignName>
 <engineerTo>
-<item key="C9B1D468-8C3E-D3A8-852C-CA22C6E4F1FF" value="true"/>
+<item key="FDB95671-CF05-D42A-6F05-A53BC62751FF" value="true"/>
+<item key="5388F670-E46C-7E48-FBF1-6A5EF0DB47FC" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
@@ -33,7 +35,8 @@
 <createdTime>2016-10-21 17:38:08 UTC</createdTime>
 <ownerDesignName>project1</ownerDesignName>
 <engineerTo>
-<item key="C9B1D468-8C3E-D3A8-852C-CA22C6E4F1FF" value="true"/>
+<item key="FDB95671-CF05-D42A-6F05-A53BC62751FF" value="true"/>
+<item key="5388F670-E46C-7E48-FBF1-6A5EF0DB47FC" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
@@ -41,5 +44,33 @@
 <domain>DOM2025070</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="SPONSOR_ID" id="457D7DE2-B7EA-A1AB-97D3-8A92B5571457">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 21:30:23 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="FDB95671-CF05-D42A-6F05-A53BC62751FF" value="true"/>
+<item key="5388F670-E46C-7E48-FBF1-6A5EF0DB47FC" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<domain>DOM2025170</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1F3C1C9E-7483-CDE8-7CCF-9E720E215565" name="SPONSOR PK">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 21:49:34 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="FDB95671-CF05-D42A-6F05-A53BC62751FF" value="true"/>
+<item key="5388F670-E46C-7E48-FBF1-6A5EF0DB47FC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>457D7DE2-B7EA-A1AB-97D3-8A92B5571457</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

@@ -1,0 +1,141 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1D74B0CE-A142-3248-0DA9-55B248170742" name="PRODUCTION">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 21:03:13 UTC</createdTime>
+<generatorID>82DED432-1C0E-1048-E1F4-D79FE89052E9</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PRODUCTION_ID" id="D99E0B14-5828-6E7A-30E1-378AB65A9541">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 21:03:13 UTC</createdTime>
+<generatorID>C05AF660-13C0-A24A-309D-3B989BD50C1A</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<domain>DOM2025170</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE" id="370BE288-5FD5-1538-EF64-EDAB6F44C30B">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 21:03:13 UTC</createdTime>
+<generatorID>13543A90-445E-BBB5-ADB1-AD28AB5058B6</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM3000001</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EVALUATION" id="607DB43A-9235-6E73-B33E-CB2C6FD72D9C">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 21:03:13 UTC</createdTime>
+<generatorID>9CE2399F-2E7D-1829-FA38-C5D0304FA991</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>DOM3000005</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PLAY_PLAY_ID" id="3D4EBB2A-ED14-F196-782F-BCB016090A8C">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 21:03:13 UTC</createdTime>
+<generatorID>B75EB085-DA63-1150-4179-8D96C738DD97</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<domain>DOM2025170</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="764203F8-43E7-546F-04A9-1DEE34DE711C" referredColumn="08A5213C-0B36-ECBC-BC83-5AC2662B0035"/>
+</associations>
+</Column>
+<Column name="MEMBERS_MEMBERS_ID" id="6DB8AB24-3A74-25E7-2969-3C8BBA46E6AA">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 21:03:13 UTC</createdTime>
+<generatorID>764FFDC6-6DD7-A3A9-B65B-25F39BC402B6</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<domain>DOM2025170</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B5EF3D5E-F489-0FA2-F84D-B5BC83B2ADCB" referredColumn="9AE2C619-0A40-6199-D52F-5B0EA7160806"/>
+</associations>
+</Column>
+<Column name="SPONSOR_SPONSOR_ID" id="065D14AA-CD20-6486-5A68-8B06A831D9DF">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 21:03:13 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ADA6292A-36A6-938D-82F5-7916453AF882" referredColumn="619ED81A-A62E-958C-8F17-0E26DBA28315"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4E338AB8-1230-6B93-C1F9-E830AC2B8509" name="PRODUCTION_PK">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 21:03:13 UTC</createdTime>
+<generatorID>880CEE7F-D551-F1F6-00AE-027CD00C1144</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D99E0B14-5828-6E7A-30E1-378AB65A9541"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A40E0309-5F86-2641-A0CA-74B4227A9BAF" name="PRODUCTION_MEMBERS_FK">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 21:03:13 UTC</createdTime>
+<generatorID>7437577B-1399-5862-F889-7204A22DA552</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6DB8AB24-3A74-25E7-2969-3C8BBA46E6AA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9186BCB5-4BFD-39AB-6DBD-697A9DC5CE0E" name="Relation_14">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 21:03:13 UTC</createdTime>
+<generatorID>EF378BE2-7C1C-0C37-E353-9F707F746222</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="065D14AA-CD20-6486-5A68-8B06A831D9DF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0AF9174D-E608-12A0-CFA5-B73AB76A6665" name="PRODUCTION_PLAY_FK">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 21:03:13 UTC</createdTime>
+<generatorID>53620F40-BA69-0228-B337-3E52F398FD47</generatorID>
+<ownerDesignName>project1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3D4EBB2A-ED14-F196-782F-BCB016090A8C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Leetest" id="5388F670-E46C-7E48-FBF1-6A5EF0DB47FC" mainViewID="DACE4008-6D45-78B1-21B8-6F0629B9B4A0">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 21:02:40 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>3FD120B5-9F4E-6278-D5E2-746D192C8319</selectedRDBMSSite>
+</relationalModel>

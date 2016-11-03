@@ -3,6 +3,9 @@
 <createdBy>Macintosh</createdBy>
 <createdTime>2016-10-22 21:12:25 UTC</createdTime>
 <ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="FDB95671-CF05-D42A-6F05-A53BC62751FF" value="true"/>
+</engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -16,6 +19,9 @@
 <createdBy>Macintosh</createdBy>
 <createdTime>2016-10-22 21:12:33 UTC</createdTime>
 <ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="FDB95671-CF05-D42A-6F05-A53BC62751FF" value="true"/>
+</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <logicalDatatype>LOGDT043</logicalDatatype>
@@ -26,6 +32,9 @@
 <createdBy>Macintosh</createdBy>
 <createdTime>2016-10-22 21:17:42 UTC</createdTime>
 <ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="FDB95671-CF05-D42A-6F05-A53BC62751FF" value="true"/>
+</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
@@ -37,6 +46,9 @@
 <createdTime>2016-10-22 21:24:07 UTC</createdTime>
 <generatorID>6AF26726-EE22-DA8B-DCBC-9E9B398C8FDD</generatorID>
 <ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="FDB95671-CF05-D42A-6F05-A53BC62751FF" value="true"/>
+</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>C05AF660-13C0-A24A-309D-3B989BD50C1A</referedAttribute>
 <use>0</use>

@@ -3,6 +3,9 @@
 <createdBy>Macintosh</createdBy>
 <createdTime>2016-10-21 17:19:54 UTC</createdTime>
 <ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="FDB95671-CF05-D42A-6F05-A53BC62751FF" value="true"/>
+</engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -16,6 +19,9 @@
 <createdBy>Macintosh</createdBy>
 <createdTime>2016-10-21 17:35:15 UTC</createdTime>
 <ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="FDB95671-CF05-D42A-6F05-A53BC62751FF" value="true"/>
+</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
@@ -26,17 +32,23 @@
 <createdBy>Macintosh</createdBy>
 <createdTime>2016-10-21 17:35:25 UTC</createdTime>
 <ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="FDB95671-CF05-D42A-6F05-A53BC62751FF" value="true"/>
+</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
 <domain>DOM3000005</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="MEMBER_ID" id="DE30CA72-4034-7E85-DB60-99EA41C17AAF">
+<Attribute name="MEMBERS_ID" id="DE30CA72-4034-7E85-DB60-99EA41C17AAF">
 <createdBy>Macintosh</createdBy>
 <createdTime>2016-10-22 21:26:16 UTC</createdTime>
 <generatorID>0E30CD2D-388E-ABD2-CC5B-B4E8E19BCA17</generatorID>
 <ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="FDB95671-CF05-D42A-6F05-A53BC62751FF" value="true"/>
+</engineerTo>
 <referedAttribute>6A164243-A5D6-B7CB-5DAB-6969206E3828</referedAttribute>
 <use>0</use>
 <logicalDatatype>LOGDT057</logicalDatatype>

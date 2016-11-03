@@ -4,7 +4,8 @@
 <createdTime>2016-10-21 17:18:45 UTC</createdTime>
 <ownerDesignName>project1</ownerDesignName>
 <engineerTo>
-<item key="C9B1D468-8C3E-D3A8-852C-CA22C6E4F1FF" value="true"/>
+<item key="FDB95671-CF05-D42A-6F05-A53BC62751FF" value="true"/>
+<item key="5388F670-E46C-7E48-FBF1-6A5EF0DB47FC" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,7 +21,8 @@
 <createdTime>2016-10-21 17:30:36 UTC</createdTime>
 <ownerDesignName>project1</ownerDesignName>
 <engineerTo>
-<item key="C9B1D468-8C3E-D3A8-852C-CA22C6E4F1FF" value="true"/>
+<item key="FDB95671-CF05-D42A-6F05-A53BC62751FF" value="true"/>
+<item key="5388F670-E46C-7E48-FBF1-6A5EF0DB47FC" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
@@ -28,13 +30,14 @@
 <domain>DOM3000005</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="MEMBER_ID" id="17890F40-8E9D-6038-651A-70E094F167DD">
+<Attribute name="MEMBERS_ID" id="17890F40-8E9D-6038-651A-70E094F167DD">
 <createdBy>Macintosh</createdBy>
 <createdTime>2016-10-22 21:41:38 UTC</createdTime>
 <generatorID>E389C04C-3BEA-2F61-3D5F-98E64DD20A35</generatorID>
 <ownerDesignName>project1</ownerDesignName>
 <engineerTo>
-<item key="C9B1D468-8C3E-D3A8-852C-CA22C6E4F1FF" value="true"/>
+<item key="FDB95671-CF05-D42A-6F05-A53BC62751FF" value="true"/>
+<item key="5388F670-E46C-7E48-FBF1-6A5EF0DB47FC" value="true"/>
 </engineerTo>
 <referedAttribute>6A164243-A5D6-B7CB-5DAB-6969206E3828</referedAttribute>
 <use>0</use>
@@ -42,5 +45,31 @@
 <domain>DOM2025170</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="CAST_ID" id="E6C4AD9C-DEED-86E4-40A8-779532EAC561">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 21:30:42 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="FDB95671-CF05-D42A-6F05-A53BC62751FF" value="true"/>
+<item key="5388F670-E46C-7E48-FBF1-6A5EF0DB47FC" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B04D71D1-1FB5-3685-5D88-0D3687A472F1" name="CAST PK">
+<createdBy>Macintosh</createdBy>
+<createdTime>2016-11-01 21:49:47 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<engineerTo>
+<item key="FDB95671-CF05-D42A-6F05-A53BC62751FF" value="true"/>
+<item key="5388F670-E46C-7E48-FBF1-6A5EF0DB47FC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E6C4AD9C-DEED-86E4-40A8-779532EAC561</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>
