@@ -4,7 +4,7 @@
 <createdTime>2016-10-21 17:18:22 UTC</createdTime>
 <ownerDesignName>project1</ownerDesignName>
 <engineerTo>
-<item key="C9B1D468-8C3E-D3A8-852C-CA22C6E4F1FF" value="true"/>
+<item key="5388F670-E46C-7E48-FBF1-6A5EF0DB47FC" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,11 +20,11 @@
 <createdTime>2016-10-21 17:30:57 UTC</createdTime>
 <ownerDesignName>project1</ownerDesignName>
 <engineerTo>
-<item key="C9B1D468-8C3E-D3A8-852C-CA22C6E4F1FF" value="true"/>
+<item key="5388F670-E46C-7E48-FBF1-6A5EF0DB47FC" value="true"/>
 </engineerTo>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT057</logicalDatatype>
-<domain>DOM2025170</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="DATE" id="406DF0E4-036A-BB0E-09B1-56E575C71500">
@@ -32,12 +32,12 @@
 <createdTime>2016-10-21 17:31:08 UTC</createdTime>
 <ownerDesignName>project1</ownerDesignName>
 <engineerTo>
-<item key="C9B1D468-8C3E-D3A8-852C-CA22C6E4F1FF" value="true"/>
+<item key="5388F670-E46C-7E48-FBF1-6A5EF0DB47FC" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
-<domain>DOM3000001</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
@@ -47,7 +47,7 @@
 <createdTime>2016-10-21 17:31:05 UTC</createdTime>
 <ownerDesignName>project1</ownerDesignName>
 <engineerTo>
-<item key="C9B1D468-8C3E-D3A8-852C-CA22C6E4F1FF" value="true"/>
+<item key="5388F670-E46C-7E48-FBF1-6A5EF0DB47FC" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
