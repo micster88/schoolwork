@@ -1,0 +1,13 @@
+body {
+    /**background-image:url("playdamage2.gif");**/
+    background-color: ;
+    background-size: 50% auto;	
+    color: orange;
+}
+
+h1 {
+    width: 550px;
+    position: relative;
+    left:60px;
+    color: red;
+}
