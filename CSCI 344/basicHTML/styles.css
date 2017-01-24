@@ -1,13 +1,44 @@
 body {
-    /**background-image:url("playdamage2.gif");**/
-    background-color: ;
+    background-color:black;
     background-size: 50% auto;	
-    color: orange;
+    color: cyan;
+    width:800px;
 }
 
 h1 {
-    width: 550px;
+    width:80%;
     position: relative;
     left:60px;
-    color: red;
+    color: dodgerblue;
+}
+
+p {
+    position: relative;
+    left: 40px;
+    font-size: 20px;
+}
+
+a, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color:white;
+}
+
+b {
+    position: relative;
+    left:35%;
+    color:white;
+}
+
+c {
+    position: relative;
+    left:70%;
+    color:white;
+}
+
+img {
+    max-width: 100%
+}
+
+li {
+    font-size: 30px;
 }
