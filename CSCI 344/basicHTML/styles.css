@@ -1,4 +1,11 @@
 /**Michael Kuczkuda**/
+#container{
+    position: absolute;
+    width:600px;
+    left:25vw;
+    height: 100vh;
+    background: purple;
+}
 body {
     background-color:black;
     background-size: 50% auto;	
@@ -10,12 +17,13 @@ h1 {
     width:80%;
     position: relative;
     left:60px;
+    padding: 5px;
     color: dodgerblue;
+    text-align: center;
 }
 
 p {
-    position: relative;
-    left: 40px;
+    text-align: center;
     font-size: 20px;
 }
 
@@ -26,20 +34,36 @@ a, a:link, a:visited, a:hover, a:active {
 
 b {
     position: relative;
-    left:35%;
+    left:30%;
     color:white;
 }
 
 c {
     position: relative;
-    left:70%;
+    left:65%;
     color:white;
 }
 
 img {
-    max-width: 100%
+    max-width: 90%;
+    border-style: solid;
+    border-width: 6px;
+    border-color: aliceblue;
+}
+
+ol{
+    list-style-type:lower-greek;
+    margin: 3px;
 }
 
 li {
-    font-size: 30px;
+    position: relative;
+    text-align: center;
+    font-size: 22px;   
+    margin: 2%;
+    padding: 1%;
+    width: 18%;
+    border-style: solid;
+    border-width: 6px;
+    border-color: aliceblue;
 }
