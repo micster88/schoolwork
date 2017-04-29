@@ -386,3 +386,4 @@ Caused by: java.io.IOException: An existing connection was forcibly closed by th
 
 2016-10-18 10:18:43,113 [Thread-9] ERROR org.eclipse.jgit.util.FS - xcode-select: note: no developer tools were found at '/Applications/Xcode.app', requesting install. Choose an option in the dialog to download the command line developer tools.
 
+2017-04-27 16:04:12,816 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
